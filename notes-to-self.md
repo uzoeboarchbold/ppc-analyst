@@ -36,3 +36,13 @@ Running log of lessons so future runs are smoother. Newest at top.
 - **No previous 2-day report existed** → nothing to compare against this run.
 - TODO for future runs: compare against `reports/ppc-2day-latest.md` BEFORE
   overwriting it (read it into memory first, then write the new one).
+- **EMAIL STEP CANNOT BE DONE AUTOMATICALLY (yet).** No email/Gmail/SMTP tool is
+  available in this environment — only the Google-Drive and github MCP servers are
+  connected. External SMTP hosts are not in the network allowlist either. So the
+  "email the report to uzoebo.archbold@gmail.com" step is currently NOT possible.
+  Workarounds delivered instead: report committed to the repo + uploaded to the
+  Drive "PPC Reports" folder (the owner can open it there). To enable real email,
+  the owner needs to add a Gmail/email MCP server (or an SMTP relay host to the
+  egress allowlist + credentials). Flag this each run until fixed; don't pretend
+  the email went out.
+- Drive "PPC Reports" folder ID: 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo.
