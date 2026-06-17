@@ -1,0 +1,30 @@
+{
+  "campaigns": [
+    {
+      "cost": 0,
+      "costPerClick": 0.0,
+      "purchases30d": 0,
+      "campaignId": 51177386692133,
+      "topOfSearchImpressionShare": null,
+      "clickThroughRate": null,
+      "sales30d": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "campaignName": "SP KT | ST w/ Sales"
+    },
+    {
+      "cost": 0,
+      "costPerClick": 0.0,
+      "purchases30d": 0,
+      "campaignId": 258847863221155,
+      "topOfSearchImpressionShare": null,
+      "clickThroughRate": null,
+      "sales30d": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "campaignName": "SP PT | ST w/ Sales"
+    }
+  ],
+  "targeting": [],
+  "searchterm": []
+}
