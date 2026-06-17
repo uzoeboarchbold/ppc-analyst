@@ -35,6 +35,17 @@ Running log of lessons so future runs are faster and more reliable.
   the campaign report still returns the campaign names, confirming the pipeline.
   spTargeting/spSearchTerm return [] when there is no click activity.
 
+## Delivery channels
+- **Google Drive: works.** Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with create_file, parentId = that folder, contentMimeType text/markdown,
+  disableConversionToGoogleType true. The folder/files are owned by
+  uzoebo.archbold@gmail.com, so uploads land directly in the user's own Drive.
+- **EMAIL: NOT POSSIBLE in this environment.** There is no Gmail/email/send-mail
+  MCP tool available (only Google-Drive and github servers are connected).
+  The "email the report to uzoebo.archbold@gmail.com" step cannot be completed
+  automatically. Until an email tool is added, rely on the Drive upload + the
+  committed report. Don't waste time re-searching every run — note it and move on.
+
 ## Date window logic
 - Data lags ~48h. 2-day report = the 2 full days ending 48h before run.
   Run 2026-06-17 → cutoff 2026-06-15 → cover 2026-06-13 (Sat) & 2026-06-14 (Sun).
