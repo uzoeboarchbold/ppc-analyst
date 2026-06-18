@@ -24,5 +24,9 @@
 ## Date window logic (data lags 48h)
 - 2-day report: cover the 2 full days ending 48h before run. Practically: run day minus 4 and run day minus 3. (Run 2026-06-18 → covered 2026-06-14 and 2026-06-15.)
 
+## Delivery channels
+- Google Drive: works. "PPC Reports" folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload report there each run.
+- **Email: NO email/Gmail tool is available in this environment.** Could not send the "PPC 2-Day Report" email to uzoebo.archbold@gmail.com. Only Google-Drive and github MCP servers are connected. Either wire up an email/Gmail MCP server, or accept Drive + repo as the delivery method. Flagged owner via push notification.
+
 ## Previous report locations
 - `reports/ppc-2day-latest.md` = newest; dated copies `reports/ppc-2day-YYYY-MM-DD.md`. Compare new run against the most recent prior dated copy.
