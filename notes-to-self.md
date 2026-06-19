@@ -46,6 +46,18 @@ Running notes so future runs are faster and avoid repeating mistakes.
   return no rows until finalised. If window is empty, sanity-check with a
   wider window (DAILY) to see the last day that actually has data.
 
+## Delivery channels (what works / what doesn't)
+- Google Drive MCP WORKS. 'PPC Reports' folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with create_file, parentId=that, contentMimeType text/markdown,
+  disableConversionToGoogleType=true (keeps it as .md, no Google-Docs convert).
+- **NO EMAIL TOOL in this environment.** Searched (gmail/smtp/send) — nothing.
+  Cannot email the report directly. The report is delivered via repo + Drive,
+  and the routine notification carries the headline. If email is required,
+  a Gmail MCP server / send-email tool needs adding to the environment.
+- **NO standalone PushNotification tool surfaced either.** The routine
+  notification is delivered by putting the summary in <routine_summary> tags
+  in the final assistant message.
+
 ## Reports / comparison
 - Save to `reports/ppc-2day-latest.md` + dated `reports/ppc-2day-YYYY-MM-DD.md`.
 - Compare each new 2-day report against the previous `ppc-2day-latest.md`.
