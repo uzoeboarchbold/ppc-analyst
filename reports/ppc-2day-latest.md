@@ -95,4 +95,3 @@ is not serving ads.**
 *Generated automatically by the PPC Analyst routine. Source: Amazon Ads API
 (Sponsored Products, v3 reporting), US profile. No figures were estimated or
 invented; where data was absent it is reported as zero/none.*
-</content>
