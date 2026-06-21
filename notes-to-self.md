@@ -34,8 +34,16 @@ Lessons learned across runs. Read this first, every run.
   so no comparison was possible.
 
 ## Delivery
-- Google Drive folder name: "PPC Reports".
-- Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Google Drive folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload
+  there with create_file + parentId. WORKS.
+- **EMAIL: no Gmail/email tool exists in this environment.** Searched
+  thoroughly (ToolSearch: gmail/send/email/notify) — only Drive + GitHub +
+  web/monitor tools are available. Cannot send the email step. Surfaced the
+  report to the user via the proactive notification path instead (SendUserFile
+  status=proactive / final reply). If email is required, an email MCP server
+  (e.g. Gmail) must be added to the environment. Don't waste time re-searching;
+  re-check only if a new MCP server appears.
+- No dedicated "PushNotification" tool either — used SendUserFile(proactive).
 
 ## Run history
 - 2026-06-21: first run. Window 2026-06-17–18. **Result: ZERO SP activity in
