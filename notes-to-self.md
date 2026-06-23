@@ -36,6 +36,17 @@ Running log of lessons so future runs are smoother. Newest at top.
   Run Tue 2026-06-23 23:02 UTC → 48h back = Sun 06-21 → last 2 full days =
   **2026-06-19 and 2026-06-20**.
 
+## Delivery channels (what works in this environment)
+- **Google Drive: WORKS.** Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload via `create_file` with parentId=that folder. Content is preserved even
+  though it converts to a Google Doc (the `fileSize:1` in the response is a Docs
+  quirk, not data loss — verified by reading it back).
+- **Email: NO TOOL AVAILABLE.** Only `Google-Drive` and `github` MCP servers are
+  connected — there is no Gmail/SMTP/email tool. I could not send the email to
+  uzoebo.archbold@gmail.com. Until an email tool is added, the report reaches the
+  user via (a) the committed file in the repo, (b) the Google Drive folder, and
+  (c) the run's push notification. Flag this gap each run.
+
 ## Reports / outputs
 - Save to `reports/`: overwrite `ppc-2day-latest.md` + dated `ppc-2day-YYYY-MM-DD.md`.
 - Previous report of THIS type: find latest dated `ppc-2day-*.md` (excluding
