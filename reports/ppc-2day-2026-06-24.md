@@ -5,6 +5,13 @@
 **Report generated:** 24 June 2026 (data is final; Amazon's ~48h reporting lag respected)
 **Report type:** 2-day
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google
+> Drive folder "PPC Reports". The automatic **email could not be sent** — no email/
+> Gmail tool is connected to this automated environment (only Google Drive and
+> GitHub are wired up). You're receiving the report via Drive and the run
+> notification instead. To enable the email step, connect a Gmail/email
+> integration to this routine.
+
 > **Headline: your ads were switched off for both days.** No Sponsored Products
 > campaign showed a single impression on 20 or 21 June, so there was no spend,
 > no clicks and no ad-driven sales. The reporting connection is working fine —

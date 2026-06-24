@@ -44,3 +44,11 @@ Lessons learned by past runs. Read this first, every run.
   (Run Wed 06-24 -> covers Sat 06-20 and Sun 06-21.)
 - After saving: commit+push to branch claude/great-hopper-5stp20, upload to Google
   Drive folder "PPC Reports", email uzoebo.archbold@gmail.com.
+
+## Email delivery (added 2026-06-24)
+- **No email/Gmail tool is connected** to this automated environment — only the
+  Google-Drive and github MCP servers are available. The "email the report" step
+  therefore cannot be completed automatically. Drive upload + the run notification
+  are the working delivery channels. If email is required, a Gmail/SMTP integration
+  must be added to the routine; until then, note the gap at the top of the report
+  rather than failing the run.
