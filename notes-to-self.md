@@ -25,3 +25,23 @@ Running log of lessons so future runs are smoother. Newest at top.
 - Reporting API: use v3 async `/reporting/reports` (adProduct
   SPONSORED_PRODUCTS). topOfSearchImpressionShare is available in the campaign
   groupBy report. Compute CTR/CPC/ACOS/ROAS ourselves from raw columns.
+- **ACCOUNT IS CURRENTLY DARK.** As of this run, of 54 SP campaigns only 2 are
+  ENABLED ("SP KT | ST w/ Sales", "SP PT | ST w/ Sales", $8 budget each) and
+  even those served 0 impressions. Everything else PAUSED/ARCHIVED. Zero spend
+  the whole week 06-15→06-22. Last real activity was before 06-15 (last 30 days
+  did have ~$541 spend / 16,138 impr across 25 campaigns). Future runs: if a
+  window is all-zero, confirm with a wider lookback + campaign state list before
+  concluding it's real (this is how I verified). Flag the "dark" status loudly.
+- **NO EMAIL TOOL in this environment.** Searched gmail/smtp/email — none of the
+  connected MCP servers (Google-Drive, github) expose a send-email tool. STEP 4's
+  email could NOT be sent. The report is saved to repo + uploaded to the
+  'PPC Reports' Drive folder, and the owner is reached via PushNotification
+  instead. If an email tool appears later, wire it in. The owner's address is
+  uzoebo.archbold@gmail.com, subject format "PPC 2-Day Report — [dates]".
+- **Google-Drive MCP has NO delete/update tool** (only create/copy/read/search).
+  My first create_file used a placeholder body by mistake → a stray 9-byte file
+  ("PPC 2-Day Report — 21-22 Jun 2026.md", id 11r6m7CYYyg2fOLeT2h7XVWjCwakoh6hn)
+  remains alongside the correct 4300-byte one (id 1yqhbcShOLphxj9op-sEMRNkmpEFt9WL8).
+  Can't remove it via API — clean up manually if it matters. Next time: build the
+  full base64/text body FIRST, upload once.
+- 'PPC Reports' Drive folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
