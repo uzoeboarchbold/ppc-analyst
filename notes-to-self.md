@@ -47,6 +47,18 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
   their ads are effectively off.
 - Main advertised product: ASIN B0FXW3GW5F (cat deterrent / pet odor eliminator).
 
+## Delivery (Drive + email)
+- **No email-sending tool is connected** to this environment (no Gmail/SMTP MCP tool;
+  ToolSearch for "email/smtp/mail/send" returns nothing). So the "email it to the owner"
+  step cannot be done literally. Substitute: commit to repo + upload to Drive +
+  `PushNotification` (which reaches the owner's phone AND inbox) + `SendUserFile`.
+  If a Gmail tool appears later, switch to actually emailing
+  uzoebo.archbold@gmail.com with subject "PPC 2-Day Report — [dates]".
+- Google Drive `create_file` with `contentMimeType: text/markdown` **auto-converts to a
+  Google Doc** (and reflows markdown tables a bit). Content is preserved and readable.
+  To keep a true .md file, pass `disableConversionToGoogleType: true`. Folder
+  'PPC Reports' id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+
 ## Reports of this type
 - Save to `reports/ppc-2day-latest.md` and `reports/ppc-2day-[YYYY-MM-DD].md`.
 - Compare each run against the previous `ppc-2day-*.md`. (2026-06-27 was the FIRST
