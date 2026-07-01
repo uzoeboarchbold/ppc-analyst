@@ -46,6 +46,12 @@ Running log of lessons so future runs go smoothly. Newest at top.
 - Google Drive: upload the .md into the folder named 'PPC Reports' (search for
   the folder first; create if missing).
 - Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+  - **BLOCKER (2026-07-01): no email/SMTP/Gmail tool is available in this
+    environment.** Only Google-Drive and GitHub MCP servers are connected.
+    Could NOT send the email this run. Delivered via Drive upload + a push
+    notification to the owner instead. If future runs still lack an email tool,
+    ask the owner to connect a Gmail/email MCP server, or treat Drive+push as the
+    delivery channel. Drive upload itself works fine.
 - Report file naming: overwrite `reports/ppc-2day-latest.md` + dated copy
   `reports/ppc-2day-YYYY-MM-DD.md` (date = run date).
 - Previous-report comparison: find the most recent prior `ppc-2day-*.md`
