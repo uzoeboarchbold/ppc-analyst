@@ -37,6 +37,17 @@ Running log of lessons so each run gets smoother. Newest lessons at top.
 - If the 2-day report returns few/zero rows, that's the API only returning
   campaigns with records; pull a 30-day report to see the full campaign list.
 
+## Delivery channels (learned 2026-07-02)
+- **Google Drive:** WORKS. Folder "PPC Reports" already exists
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`, owner uzoebo.archbold@gmail.com).
+  Upload with `mcp__Google-Drive__create_file`, parentId = that folder,
+  contentMimeType `text/markdown`, disableConversionToGoogleType true (keeps it
+  as a real .md file rather than converting to a Google Doc).
+- **Email:** NO email/Gmail tool is available in this environment (searched;
+  nothing matched). Could NOT send the "PPC 2-Day Report" email this run. The
+  report is instead delivered via git + Google Drive. If email is required,
+  a Gmail MCP / SMTP integration needs to be added to the environment.
+
 ## Report housekeeping
 - Reports live in `reports/`. Overwrite `ppc-2day-latest.md`, also save dated
   `ppc-2day-YYYY-MM-DD.md`. Compare each run to the previous 2-day report.
