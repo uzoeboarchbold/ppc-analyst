@@ -34,6 +34,17 @@ Running log of lessons so each run gets smoother. Newest lessons at the top.
   budget, out of stock, or bids too low. **If future runs still show zero,
   the account needs a human to check campaign status / budget / inventory.**
 
+## Delivery channels
+- **Google Drive: WORKS.** Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `create_file` (parentId=that id, contentMimeType `text/markdown`,
+  disableConversionToGoogleType true) so it stays a real .md file.
+- **Email: NO TOOL AVAILABLE.** Only Google-Drive and github MCP servers are
+  connected — there is no Gmail/SMTP/email tool. The task asks to email
+  uzoebo.archbold@gmail.com but this run could NOT send email. Report was still
+  saved to repo + Drive. **Action for the owner:** connect a Gmail/email
+  connector if emailed delivery is required, or rely on Drive + repo. Until
+  then, every run will skip the email step (not a bug — a missing capability).
+
 ## Report bookkeeping
 - This report type: 2-day. Latest file: `reports/ppc-2day-latest.md`.
   Dated copies: `reports/ppc-2day-YYYY-MM-DD.md`.
