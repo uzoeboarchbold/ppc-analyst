@@ -10,6 +10,11 @@
 > accounts and used the **US** seller account, which is the one that has
 > Sponsored Products campaigns. Canada and Mexico have no PPC campaigns. The data
 > pulled cleanly from Amazon — nothing failed.
+>
+> **Delivery note:** This report is saved to the repo and uploaded to the Google
+> Drive 'PPC Reports' folder. The automated **email could not be sent** because the
+> Gmail connector is currently switched off for this automation — to receive these
+> by email, enable the Gmail connector for this chat in connector settings.
 
 ---
 

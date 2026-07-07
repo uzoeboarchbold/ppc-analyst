@@ -46,5 +46,14 @@ Running log of lessons so future runs are smoother. Newest lessons at top.
   Run 2026-07-07 ~23:00 UTC → window July 3 + July 4, 2026.
 
 ## Delivery
-- Reports folder in Google Drive is named 'PPC Reports'. Upload the .md there.
-- Email final report to uzoebo.archbold@gmail.com.
+- Reports folder in Google Drive is named 'PPC Reports'
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload the .md there with
+  `mcp__Google-Drive__create_file` (contentMimeType text/markdown,
+  disableConversionToGoogleType=true). Works fine.
+- **EMAIL IS BLOCKED IN AUTOMATED RUNS.** The Gmail connector is installed but
+  `enabledInChat: false` — authenticated but toggled OFF for this chat, so no
+  Gmail tools load and the email to uzoebo.archbold@gmail.com CANNOT be sent
+  automatically. Fix: user must enable the Gmail connector for this
+  chat/automation in connector settings. Until then, deliver the report via the
+  repo commit + Google Drive + the routine push-notification, and flag the email
+  gap. (First run 2026-07-07 hit this.)
