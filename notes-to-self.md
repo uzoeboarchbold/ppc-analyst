@@ -35,6 +35,15 @@ Running log of lessons so each run gets smoother. Newest lessons at top.
 - Data lags ~48h. 2-day report covers the 2 full days ending 48h before run time.
 - e.g. run 2026-07-08 -> cutoff 2026-07-06 -> cover 2026-07-04 & 2026-07-05.
 
+## Email delivery — BLOCKED (needs user action)
+- The Gmail connector exists and is authenticated at the org level, but it is
+  **toggled OFF for the Claude session/chat** (`enabledInChat: false`), so no
+  Gmail send/draft tool is loaded and the report CANNOT be emailed automatically.
+- Fix (one-time, user must do it): enable the **Gmail** connector for this
+  chat/automation in claude.ai connector settings. Once its tools load, email the
+  report to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Until then: report is still committed to the repo and uploaded to Google Drive.
+
 ## Reports / delivery
 - Save to `reports/`: overwrite `ppc-2day-latest.md` + dated `ppc-2day-YYYY-MM-DD.md`.
 - Compare against the previous `ppc-2day-*.md` (excluding latest). FIRST RUN =

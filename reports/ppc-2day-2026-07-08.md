@@ -8,6 +8,11 @@
 > advertising profile ID (it held an application ID). I looked up the account's profiles
 > directly and used the live US seller profile (`26765323558215`), which is the only one
 > with an active daily budget. Data pulled successfully; no numbers are estimated.
+>
+> **Delivery note:** This report is saved to the repo and uploaded to the Google Drive
+> "PPC Reports" folder, but it could **not be emailed automatically** — the Gmail
+> connector is turned off for this automated session. To enable email, switch the Gmail
+> connector on for this chat in claude.ai connector settings; future runs will then send.
 
 > **Headline:** The account is effectively dark. Only 2 of ~50 campaigns are switched on,
 > and both delivered **zero impressions, clicks, spend and sales** across these two days.
