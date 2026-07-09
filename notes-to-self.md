@@ -38,6 +38,16 @@ Lessons learned by automated runs. Read this first every run.
 - 2026-07-09 run (window Jul 5-6): FIRST 2-day report, so no prior report to
   compare against -> treated as baseline.
 
+## Delivery channels
+- Google Drive upload works: folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Use mcp__Google-Drive__create_file with contentMimeType text/markdown and
+  disableConversionToGoogleType=true (else it converts to a Google Doc).
+- **EMAIL NOT AVAILABLE:** there is no Gmail/email/SMTP MCP tool in this
+  environment (only agent SendMessage + Drive). The "email it to
+  uzoebo.archbold@gmail.com" step cannot be done from here. Report is delivered
+  via the repo commit + Google Drive instead. If email is required, an email
+  connector (e.g. Gmail MCP) needs to be added to the session.
+
 ## Observations to watch
 - 2026-07-05/06: both ENABLED campaigns delivered ZERO impressions/clicks/spend/sales.
   Ads effectively dark. If this persists, flag it — likely bids too low, targets
