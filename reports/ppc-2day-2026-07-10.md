@@ -10,6 +10,12 @@ to finalise. Report generated 10 July 2026.
 > sales. This was double-checked against a wider 14-day window (24 Jun–7 Jul),
 > which was also all zeros, so it is a real account condition, not a data glitch.
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google
+> Drive "PPC Reports" folder, but it could **not be emailed** — the Gmail connector
+> is currently switched off for the automated session, so no email tools were
+> available. To receive these by email, enable the Gmail connector in the session's
+> connector settings.
+
 ---
 
 ## Part A — Data Table

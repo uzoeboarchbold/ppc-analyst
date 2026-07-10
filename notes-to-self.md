@@ -31,6 +31,15 @@ Lessons learned from past runs. Read this first every time.
   real by pulling a 14-day window (Jun24–Jul7), still all zeros. Campaigns are
   live but not serving. Flag this each run until delivery starts.
 
+## Delivery channels
+- Google Drive works: folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  create_file uploads fine (md gets converted to a Google Doc, which is OK).
+- **Email NOT sendable in this run:** the Gmail connector is installed but
+  `enabledInChat:false` (toggled off for the session), so no Gmail tools load.
+  Until Gmail is enabled for the automated session, the emailing step can't run.
+  Report is still saved to the repo + Drive. Owner needs to enable Gmail in the
+  session's connector settings to get emails.
+
 ## Report bookkeeping
 - 2-day report files: `reports/ppc-2day-latest.md` + `reports/ppc-2day-YYYY-MM-DD.md`.
 - Compare each new 2-day report against the previous `ppc-2day-*` dated file.
