@@ -29,5 +29,12 @@ Running log of lessons so future runs are smoother. Newest at top.
   report is "enabled campaigns are not delivering." Re-verify with a wider-window sanity pull
   before declaring zeros.
 - **Date window:** run 2026-07-11 23:03 UTC → 48h lag → covered 2026-07-07 & 2026-07-08.
-- **TODO for next run:** find/confirm a Gmail send tool and the Google Drive 'PPC Reports'
-  folder id (see report delivery notes in the run log).
+- **DELIVERY:**
+  - Google Drive 'PPC Reports' folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload via
+    `mcp__Google-Drive__create_file` with `contentMimeType: text/markdown` and
+    `disableConversionToGoogleType: true` (keeps it a .md, not a Google Doc). Worked.
+  - **EMAIL NOT POSSIBLE:** There is NO email/Gmail/SMTP send tool in this environment (only a
+    Google Drive connector + GitHub). So the "email to uzoebo.archbold@gmail.com" step cannot be
+    completed automatically. Don't burn time re-searching each run — if an email/Gmail connector
+    gets added later, wire it up. For now: report is delivered via repo commit + Drive, and the
+    email gap is called out at the top of the report and in the run's push notification.
