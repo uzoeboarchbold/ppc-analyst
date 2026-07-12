@@ -38,6 +38,10 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
   fully mature, so sales/ACOS may still tick up later. Note this in the report.
 
 ## Delivery
+- **NO EMAIL TOOL is connected** in this environment (searched: no Gmail/SMTP/
+  compose tool). The "email it to uzoebo.archbold@gmail.com" step CANNOT be done
+  automatically yet. Deliver via repo + Drive and note the gap in the report.
+  If a Gmail/email MCP tool appears in future, wire it in.
 - Google Drive folder **'PPC Reports'** id: `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
 - Repo `reports/` folder: overwrite `ppc-2day-latest.md` + dated copy
   `ppc-2day-YYYY-MM-DD.md`. Email to uzoebo.archbold@gmail.com.
@@ -47,3 +51,6 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
 ## Run history
 - 2026-07-12: FIRST RUN of the 2-day report. No prior report to compare
   against (comparison section noted as baseline). Window Jul 8–9, 2026.
+  KEY FINDING: account is effectively OFF — 54 SP campaigns, only 2 ENABLED
+  (both zero impressions in window), 45 PAUSED, 7 ARCHIVED. Spend/sales = $0.
+  Delivered to repo + Drive; email skipped (no email tool). Notified owner.
