@@ -33,8 +33,17 @@ Running log of lessons so future runs are faster and more reliable.
   recent 2-day window.
 - timeUnit `SUMMARY`, format `GZIP_JSON`. Poll `GET /reporting/reports/{id}`
   until status=COMPLETED, then download the presigned `url` (NO auth header on
-  the S3 download), gunzip, parse JSON. Reports can take ~1–3 min to generate;
-  poll in the background so the shell doesn't time out.
+  the S3 download), gunzip, parse JSON. Reports usually take ~1–3 min, BUT the
+  queue can be slow — on 2026-07-14 the spCampaigns + spSearchTerm reports sat
+  in PENDING for 20+ min while spTargeting finished in <1 min. Poll in the
+  background with a generous cap (~25 min).
+- **Don't re-POST an identical report config** to "retry" a slow one — Amazon
+  returns HTTP 425 `{"detail":"The Request is a duplicate of : <reportId>"}`
+  and gives you back the SAME pending reportId. Just keep polling the original.
+- **Zero-delivery shortcut:** if the spTargeting report returns 0 rows for the
+  window, there was no ad delivery at all, so spCampaigns will be all-zeros too
+  (targets are what serve). You can write the report confidently from that even
+  if the campaign report is still stuck in the queue — just say so plainly.
 
 ## Date window logic (data lags 48h)
 - 2-day report covers the 2 full days ending 48h before run time.
@@ -43,8 +52,21 @@ Running log of lessons so future runs are faster and more reliable.
 ## Delivery
 - Save reports to `reports/`: overwrite `ppc-2day-latest.md` + dated
   `ppc-2day-YYYY-MM-DD.md`. Commit to branch `claude/great-hopper-5zrqfe`.
-- Upload to Google Drive folder "PPC Reports".
-- Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Upload to Google Drive folder "PPC Reports" (folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Use create_file with
+  contentMimeType `text/markdown` + disableConversionToGoogleType=true to keep
+  it as a real .md file.
+- **Email step NOT possible:** there is NO email/Gmail connector in this
+  environment (only Google-Drive + github MCP). Can't send the email. Save to
+  repo + Drive and send a PushNotification to the owner instead. If an email
+  connector is added later, wire it up.
 
 ## Run history
-- 2026-07-14: First run. No previous 2-day report to compare against.
+- 2026-07-14 (this run): 2-day report for window 2026-07-10→2026-07-11.
+  Account STILL DARK — 2 enabled campaigns, 0 impressions/clicks/spend/sales.
+  54 campaigns total (2 ENABLED, 45 PAUSED, 7 ARCHIVED). Compared against the
+  previous 2-day report (9–10 Jul, generated 07-13) which was also all-zeros —
+  no change. spTargeting=0 rows confirmed zero delivery; spCampaigns report was
+  stuck PENDING 20+ min so wrote Part A from the confirmed zeros. Prior Drive
+  history exists back to mid-June (repo `reports/` was empty this run, so the
+  comparison baseline came from the Drive copy ppc-2day-2026-07-13.md).
