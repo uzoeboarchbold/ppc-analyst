@@ -56,6 +56,17 @@ Running memory so each run is a bit smarter than the last. Read this first.
 
 - (2026-07-17) First run: no previous 2-day report existed, so no comparison was
   possible. Next run should compare against ppc-2day-latest.md from this run.
+- (2026-07-17) KEY FINDING: the US account is DARK. Zero impressions/clicks/
+  spend/sales every day for 30+ days (21 Jun–14 Jul, confirmed via a DAILY
+  diagnostic report). Only 2 campaigns ENABLED ("SP KT | ST w/ Sales",
+  "SP PT | ST w/ Sales") and both serve 0 impressions; everything else PAUSED.
+  If future runs still show zeros, don't re-investigate from scratch — it's the
+  same dark-account state. Useful trick: pull a 30-day DAILY spCampaigns report
+  to confirm whether zeros are a window fluke or an ongoing outage.
+- (2026-07-17) Google Drive upload WORKS: folder "PPC Reports" id
+  1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo. Use mcp Google-Drive create_file with
+  contentMimeType text/markdown + disableConversionToGoogleType=true so it stays
+  a .md file (otherwise it converts to a Google Doc).
 - (2026-07-17) CONFIRMED: there is NO email-sending tool in this environment.
   Available delivery = Google Drive MCP (create_file) + GitHub repo commit only.
   So the "email to uzoebo.archbold@gmail.com" step cannot be done automatically.
