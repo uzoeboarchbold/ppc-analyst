@@ -47,8 +47,14 @@ Running log of lessons so future runs are smoother. Newest first.
   23:03 → covered **Jul 16 & Jul 17**.
 
 **Delivery**
-- Google Drive folder for uploads: "PPC Reports" (via Google-Drive MCP).
-- Email report to uzoebo.archbold@gmail.com. (Check what email tool is
-  available; note the result here next run.)
+- Google Drive folder for uploads: "PPC Reports"
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload via
+  `mcp__Google-Drive__create_file` with `parentId` = that id, contentMimeType
+  `text/markdown` (uploads as a Google Doc). Worked fine.
+- EMAIL: the Gmail connector IS installed but `enabledInChat: false` — its
+  tools are NOT loaded in the automated session, so I could NOT send email
+  this run. No other email tool exists. Owner must enable Gmail for this
+  session (connector settings) to restore email delivery. Until then,
+  deliver via repo + Drive + push notification and flag the gap in-report.
 - Reports saved to repo `reports/`: `ppc-2day-latest.md` + dated copy.
 - Previous 2-day report to compare against: NONE yet (this is the first).
