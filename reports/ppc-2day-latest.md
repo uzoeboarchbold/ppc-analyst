@@ -4,6 +4,10 @@
 **Window covered:** 17 July 2026 – 18 July 2026 (2 full days)
 **Generated:** 21 July 2026 (data ends 48h before run, per Amazon's ~48h finalisation lag)
 **Attribution:** 7-day click attribution
+**Delivery:** Saved to the repo and uploaded to Google Drive → "PPC Reports". The
+automatic email could not be sent — the Gmail connector is not enabled for this
+session. To receive these by email, enable Gmail in this chat's connector
+settings (one-time), and future runs will email automatically.
 
 ---
 

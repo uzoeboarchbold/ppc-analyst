@@ -48,6 +48,20 @@ Purpose: lessons learned so each run is smoother. Append, don't delete.
 - Consequence: no wasted-spend or search-term-to-harvest analysis is possible
   until the campaigns actually deliver.
 
+## Delivery channels (Drive works, email does NOT yet)
+- Google Drive: connector is connected AND enabled in chat. Folder "PPC Reports"
+  id = 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo. Upload with create_file (textContent,
+  contentMimeType text/markdown, disableConversionToGoogleType true).
+- **Drive connector has NO update or delete tool** — only create/copy/read.
+  So DON'T upload a placeholder first; pass the final content on the first
+  create_file call (you cannot fix it afterward). (2026-07-21 run left one
+  13-byte placeholder file that can't be removed via tools — ignore it.)
+- **EMAIL: Gmail connector is installed but `enabledInChat=false`**, so it can't
+  send this run. There is no other email/SMTP tool. ACTION FOR OWNER: enable the
+  Gmail connector for this chat/session so future runs can email the report to
+  uzoebo.archbold@gmail.com. Until then, note in the report that email was
+  skipped and rely on Drive + repo.
+
 ## Report bookkeeping
 - 2-day report files: reports/ppc-2day-latest.md (overwrite) and
   reports/ppc-2day-YYYY-MM-DD.md (dated). Find the previous ppc-2day-*.md to
