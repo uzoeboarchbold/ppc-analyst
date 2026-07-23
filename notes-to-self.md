@@ -44,5 +44,17 @@ Running log of lessons so future automated runs go smoothly. Newest at top.
 ## Delivery
 - Save reports/ppc-2day-latest.md + reports/ppc-2day-YYYY-MM-DD.md; commit+push
   to branch `claude/great-hopper-8grheg`.
-- Upload to Google Drive folder 'PPC Reports'.
+- Upload to Google Drive folder 'PPC Reports' (folder id 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo).
 - Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+
+## Delivery gotchas (learned 2026-07-23)
+- **EMAIL BLOCKED:** The Gmail connector is installed but `enabledInChat: false`
+  for this scheduled session, so NO email tool loads and the report cannot be
+  emailed automatically. Nothing I can do in-session fixes this — the user must
+  enable the Gmail connector for this scheduled run. Until then: rely on Drive +
+  the push notification. Don't waste time retrying; just note it and notify.
+- **Google Drive create_file has NO update/delete counterpart** in this session.
+  Re-uploading makes DUPLICATES. So: (1) FINALISE the report fully (incl. any
+  delivery caveats) BEFORE the first Drive upload, and (2) pass the real content
+  on the first call — never a placeholder. On 2026-07-23 I left 1 stray 30-byte
+  placeholder + an interim copy in the folder because I uploaded before finalising.

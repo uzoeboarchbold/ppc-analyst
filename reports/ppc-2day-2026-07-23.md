@@ -7,7 +7,10 @@
 
 ---
 
-## ⚠️ Read this first — two setup notes
+## ⚠️ Read this first — setup notes
+
+**Delivery note (email):** This report was saved to the repo and uploaded to the Google Drive "PPC Reports" folder successfully, but it could **not be emailed automatically**. The Gmail connector is installed on the account but is **switched off for this automated session** (`enabledInChat: false`), so no email tool was available to send from. To restore automatic emailing, enable the Gmail connector for this scheduled session in the connector settings. Until then, please read the report from Google Drive or the repo.
+
 
 1. **No ad activity in this window.** Across the account there were **0 impressions, 0 clicks, $0.00 spend and $0.00 ad sales** on both days. This is not a data error — the data pulled cleanly. The cause is that the advertising is effectively switched off: of the account's ~55 Sponsored Products campaigns, only **2 are Enabled** and even those two did not serve any impressions on these dates. Everything else is Paused or Archived. See the summary for what this means and what to do.
 
