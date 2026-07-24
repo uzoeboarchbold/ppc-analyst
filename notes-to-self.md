@@ -46,7 +46,30 @@ Newest lessons at the top of each section.
 - **Git:** save to `reports/ppc-2day-latest.md` + dated copy, commit & push
   to branch `claude/great-hopper-c8qu4x`.
 
-## Comparison
-- Compare against the PREVIOUS 2-day report file in `reports/`
-  (`ppc-2day-*.md`, excluding latest and today's). First run (2026-07-24)
-  had no prior report, so no comparison was possible.
+## Comparison — WHERE THE HISTORY LIVES
+- The **git repo starts fresh** each run in this environment (only the
+  initial commit is present). The DURABLE history of past 2-day reports
+  lives in the **Google Drive "PPC Reports" folder**, NOT in git. So to find
+  the previous report of this type, LIST THE DRIVE FOLDER
+  (`parentId = '1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo'`) and pick the most recent
+  "PPC 2-Day Report …" by date — do not assume "no prior report exists".
+- 2-day reports run every ~2 days. As of 2026-07-24 the previous one was
+  **18–19 Jul 2026** (created 2026-07-22).
+
+## KEY ONGOING FINDING — account has been DARK since ~9–10 June 2026
+- Every 2-day report for 6+ weeks (from mid-June through 21 Jul) shows
+  **$0 spend, $0 sales, 0 clicks, 0 impressions**. This is real, not a data
+  error (cross-checked against 30-day pulls each time).
+- Only 2 campaigns are ENABLED — "SP KT | ST w/ Sales" (keyword targeting)
+  and "SP PT | ST w/ Sales" (product targeting), ~$8/day each — and BOTH
+  serve zero impressions. The other ~52 campaigns are PAUSED or ARCHIVED.
+- Root cause is delivery-side, not settings: most likely the advertised
+  product (ASIN B0FXW3GW5F) is out of stock / has lost the Buy Box / listing
+  suppressed, OR bids are too low to win any auction. validPaymentMethod is
+  now TRUE (an earlier June report suspected payment; that's resolved).
+- The spCampaigns report only returns the ENABLED campaigns (both zero);
+  spTargeting and spSearchTerm return 0 rows — all consistent with zero
+  delivery.
+- Because this is a persistent, already-well-documented outage, the
+  notification should say "still dark, no change" rather than raise a fresh
+  alarm each run.
