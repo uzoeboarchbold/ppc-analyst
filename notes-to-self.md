@@ -38,6 +38,15 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
   state. If future runs still show zeros, the story is "ads switched off," and
   the useful action is to alert the owner, not to keep re-pulling.
 
+## Delivery channels
+- **Email step FAILED 2026-07-26.** The Gmail connector exists but is
+  `enabledInChat: false` (toggled off for the automated session), so no email
+  tool is loaded and the report cannot be emailed hands-off. Google Drive upload
+  DOES work. Fix: the account owner must enable the Gmail connector for this
+  scheduled session's chat/connector settings. Until then, delivery = repo commit
+  + Drive upload + push notification only. Don't retry email; it can't be loaded
+  mid-session once it's disabled.
+
 ## Report bookkeeping
 - Report types & their prior-report files live in `reports/`. This 2-day run is
   the FIRST of its type (no previous ppc-2day report existed) — no comparison
