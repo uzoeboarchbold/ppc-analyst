@@ -27,7 +27,15 @@ Running log of lessons so future runs are smoother. Newest first.
 - **Previous report location:** compare 2-day reports against `reports/ppc-2day-latest.md` (overwritten
   each run) — but this was the FIRST run, so no comparison was possible.
 
+- **EMAIL BLOCKED.** The Gmail connector is installed for the account but **`enabledInChat: false`** —
+  its tools are NOT loaded in this automated session, so the report could NOT be emailed to
+  uzoebo.archbold@gmail.com this run. No SMTP/mail tool is available either. This needs the user to
+  **enable the Gmail connector for automated/scheduled sessions** (in claude.ai connector settings).
+  Until then, delivery is: repo commit + Google Drive upload only. Flag this in the run's notification.
+
 ## TODO for future runs
-- Google Drive upload: ensure a folder named 'PPC Reports' exists; create if missing.
+- Google Drive upload: ensure a folder named 'PPC Reports' exists; create if missing. (Confirmed folder
+  id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo` exists as of first run.)
+- Re-check each run whether Gmail is enabled in-chat; if so, send the email. If not, note it wasn't sent.
 - If spend stays near-zero, consider noting it prominently — it may mean campaigns are paused,
   out of budget delivery, or bids too low.
