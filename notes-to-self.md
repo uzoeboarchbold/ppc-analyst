@@ -32,8 +32,15 @@ Running log of lessons so future runs work better. Newest at top.
   Gmail tool is loaded, so I cannot send the email automatically. Delivered via
   Google Drive upload + git commit instead. **Action for human:** enable the
   Gmail connector for this scheduled chat so future runs can email the report.
-- **Google Drive:** connected and working. Folder "PPC Reports" — search for it;
-  create it if missing.
+- **Google Drive:** connected and working. Folder "PPC Reports" id =
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with `create_file` using
+  `base64Content` + `contentMimeType: text/markdown` +
+  `disableConversionToGoogleType: true` (so it stays a .md, not a Google Doc).
+  - **Pitfall:** `create_file` always CREATES a new file — there is NO update
+    and NO delete/trash tool. So put the REAL content in the first call; do not
+    upload a placeholder. On this run I left a stray 5-byte
+    `ppc-2day-2026-07-28.md` dummy in the folder (id `1UfyexxK2Pco...`) that I
+    could not remove. Human can delete it manually; harmless.
 - **Date window logic (2-day, data lags 48h):** cover the 2 full days ending 48h
   before run. Practically = (run_date − 4) through (run_date − 3). Run 2026-07-28
   → covered **2026-07-24 and 2026-07-25**.
