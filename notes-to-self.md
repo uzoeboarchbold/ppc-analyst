@@ -34,7 +34,15 @@ Running log of lessons so each run is smoother. Newest notes at top.
   are apples-to-apples because every run has the same lag.
 
 ## Delivery channels
-- **Google Drive**: connected & enabled. Upload report to folder "PPC Reports".
+- **Google Drive**: connected & enabled. Folder "PPC Reports" already exists,
+  id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with `create_file` using
+  `textContent` + `contentMimeType: text/markdown` +
+  `disableConversionToGoogleType: true` (else it converts to a Google Doc).
+  **WARNING: there is NO Drive delete/update/trash tool** — you cannot fix a
+  bad upload. Get the content right on the FIRST `create_file` call. (Run 1 I
+  fumbled a placeholder upload and left a stray 9-byte junk file
+  `ppc-2day-2026-07-29.md` id `1Uny6D4EJZ39aMCVGWpKDDg421CjFrjYN` that can't be
+  removed — the good copy is id `1P5M6D6umlRk2aCpInj8iw2ICYwQalPto`.)
 - **Email / Gmail**: the Gmail connector is installed for the org but is
   **toggled OFF for this chat** (`enabledInChat: false`), so there is NO
   callable send-email tool in the automated session. Cannot email the report.
