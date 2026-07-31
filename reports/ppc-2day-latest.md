@@ -86,3 +86,14 @@ In short: this looks like a newly-launched or very low-bid set of campaigns that
 | ROAS | 0.0 | — | baseline |
 
 **Verdict:** Baseline established. Activity is currently near zero; the goal for the next period is to increase impressions and clicks by lifting bids.
+
+---
+
+### Delivery log (automated)
+- ✅ Saved to repo `reports/` (latest + dated) and committed/pushed.
+- ✅ Uploaded to Google Drive folder **PPC Reports**.
+- ⚠️ **Email not sent.** The Gmail connector is installed but not enabled for
+  this automated session (no send permission available), so I could not email
+  this to uzoebo.archbold@gmail.com. To fix: enable the Gmail connector for
+  scheduled/Claude Code sessions (or add an email-sending connector). The report
+  is available above, in the repo, and in Google Drive in the meantime.

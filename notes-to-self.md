@@ -77,6 +77,14 @@ its lessons, and add new ones whenever something surprises me.
 ## Delivery status / TODO
 - Google Drive: MCP Google-Drive tools are available (create_file, search_files).
   Need to find/create folder 'PPC Reports' and upload the .md.
-- EMAIL: no confirmed email-sending tool found yet. If none exists, note in the
-  report footer that email delivery is pending a connector, and record here.
-  (Check ListConnectors / Gmail MCP on future runs.)
+- EMAIL: BLOCKED. Gmail connector is installed for the org but shows
+  enabledInChat=false in automated sessions, and NO send/draft tool loads
+  (ToolSearch for gmail send returns nothing). So I cannot email the report
+  from a scheduled run. Documented in the report's Delivery log. ACTION FOR
+  OWNER: enable the Gmail connector for Claude Code / scheduled sessions, or
+  add a dedicated email connector. Re-check ListConnectors each run; once
+  enabledInChat=true and a send tool appears, email to
+  uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Google Drive upload WORKS: folder 'PPC Reports' id
+  1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo. Use create_file with contentMimeType
+  text/markdown + disableConversionToGoogleType=true to keep it as .md.
