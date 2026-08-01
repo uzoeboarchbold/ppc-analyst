@@ -37,8 +37,17 @@ Lessons carried between runs. Read this first, every run.
 - Metrics use 7-day attribution (purchases7d / sales7d).
 
 ## Delivery
-- Save to Google Drive folder "PPC Reports" and email
-  uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Save to Google Drive folder "PPC Reports" (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`)
+  and email uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- **EMAIL BLOCKED (2026-08-01):** The Gmail connector is installed but
+  `enabledInChat: false`, so no Gmail send tool is loaded — the report could NOT
+  be emailed automatically. ACTION NEEDED: user must enable the Gmail connector
+  for this chat/automation in connector settings. Until then, delivery is
+  Drive + repo only. Re-check each run.
+- **Drive has no delete/update tool** — only create/copy. Don't upload a
+  placeholder then re-upload; build the full content first and upload once, or
+  you'll leave duplicates you can't clean up (happened on the 2026-08-01 run —
+  one stray 11-byte placeholder left behind).
 
 ## History
 - 2026-08-01 (first run, baseline): Jul 28–29. Almost dormant account —

@@ -5,6 +5,11 @@
 **Run date:** 1 Aug 2026 · **Ad product:** Sponsored Products · **Attribution:** 7-day
 **Generated automatically.**
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google
+> Drive "PPC Reports" folder, but it could **not be emailed automatically** — the Gmail
+> connector is installed yet not enabled for this automation, so no send tool was
+> available. Please enable the Gmail connector for this chat to restore email delivery.
+
 > **Setup note (auto-fixed):** The `AMZ_PROFILE_ID` environment variable was set to an
 > application ID (`amzn1.application.…`), not a numeric Ads profile ID, so it could not be
 > used directly. The account exposes three seller profiles (US, CA, MX). This run used the
