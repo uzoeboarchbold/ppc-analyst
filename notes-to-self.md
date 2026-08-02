@@ -51,9 +51,15 @@ Running log of lessons so each automated run gets smoother. Newest first.
   one being written this run.
 
 ### Delivery
-- Google Drive: upload to folder **"PPC Reports"** (Google-Drive MCP).
-- Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
-  (If no email MCP tool is available, note it here and in the report.)
+- Google Drive: upload to folder **"PPC Reports"** (Google-Drive MCP) —
+  works. Folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload as `text/markdown`
+  with `disableConversionToGoogleType=true` to keep it as a .md file.
+- **EMAIL: NOT AVAILABLE.** No Gmail/email/SMTP MCP tool is connected in this
+  environment (searched "email", "gmail", "send message" — only Google-Drive
+  and github MCP servers exist). The report **cannot be emailed** to
+  uzoebo.archbold@gmail.com from here. The report still reaches the user via
+  the committed repo file + the Drive "PPC Reports" folder. If email is
+  required, the account owner needs to connect a mail MCP/connector.
 
 ### Date window recipe (2-day report)
 - Data lags ~48h. Window = the 2 full days ending 48h before run time.
