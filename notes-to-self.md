@@ -51,5 +51,13 @@ Running log of lessons so each run goes smoother. Newest lessons at top.
   / paused campaigns / stock. Flagged in report "what to do next".
 
 ## Delivery
-- Google Drive: upload the report file to the folder named **"PPC Reports"**.
-- Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+- Google Drive: upload the report file to the folder named **"PPC Reports"**
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Working — uploaded as
+  `text/markdown` with `disableConversionToGoogleType=true`.
+- **EMAIL BLOCKED (2026-08-03):** The **Gmail** connector is installed but
+  `enabledInChat=false` for these automated sessions, so no Gmail tool is loaded
+  and the report could NOT be emailed. There is no other mail/SMTP tool available.
+  Action needed from the account owner: enable the Gmail connector *in this chat/
+  session's connector settings* so future runs can email. Until then, the report
+  is still delivered via the repo commit + the Google Drive "PPC Reports" folder.
+  Each run should PushNotification the owner about the report + this email gap.
