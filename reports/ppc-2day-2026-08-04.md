@@ -110,6 +110,13 @@ this window as the **baseline** for the next 2-day report.
 2-day report will compare against these numbers.
 
 ---
+**Delivery note:** This report was saved to the repo and uploaded to the Google
+Drive "PPC Reports" folder successfully. **The email step could not run** — the
+Gmail connector is not enabled for this automated session, so the routine has no
+tool to send mail. To fix for future runs, enable the Gmail connector in this
+chat/session's connector settings. A phone/email notification was sent instead.
+
+---
 _Data source: Amazon Advertising API (Sponsored Products, v3 reporting), US
 profile. 7-day sales attribution. Generated automatically by the PPC Analyst
 routine._
