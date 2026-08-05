@@ -38,5 +38,14 @@ Running log of lessons so future runs go smoothly. Newest notes at top.
 
 ## Reports / delivery
 - Save reports/ppc-2day-latest.md + dated copy; commit to branch
-  claude/great-hopper-jk7mbk.
-- Google Drive folder: "PPC Reports". Email to uzoebo.archbold@gmail.com.
+  claude/great-hopper-jk7mbk. WORKS.
+- Google Drive folder "PPC Reports" id=1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo.
+  Upload via create_file with disableConversionToGoogleType=true. WORKS.
+- **EMAIL STEP BLOCKED (2026-08-05).** The Gmail connector is installed for
+  this org but shows `enabledInChat: false` — its tools are NOT loaded in the
+  automated session, so there is NO way to send the email hands-off. Nothing to
+  retry; it's a per-chat toggle a human must flip. ACTION FOR THE OWNER: enable
+  the Gmail connector for this scheduled task's chat (connector settings), or
+  wire an SMTP/API email path via env vars. Until then, delivery = Drive +
+  git commit + the run's push notification. Don't waste cycles hunting for an
+  email tool each run — check ListConnectors once; if still off, note & move on.
