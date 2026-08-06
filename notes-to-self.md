@@ -46,6 +46,16 @@ Running log of lessons so future runs are faster and more reliable. Newest at to
 - Data lags ~48h. Cover the 2 full finalised days ending ≥48h before run.
 - 2026-08-06 23:07 UTC run → window **Aug 2–3, 2026**. (Aug 4 not yet finalised.)
 
+## ⚠️ Known issue: email step can't run in automated sessions
+- The **Gmail** connector is installed at org level but shows `enabledInChat:false`
+  in these scheduled runs, so no Gmail send/draft tool loads — the "email it to
+  uzoebo.archbold@gmail.com" step **cannot be completed automatically**.
+- **Google Drive** connector IS enabled in-chat and works (upload confirmed).
+- Workaround for now: save to repo + upload to the "PPC Reports" Drive folder
+  (both done), and flag in the report + notify the owner that email was skipped.
+  To fix permanently: enable the Gmail connector for the scheduled session, or
+  provide SMTP creds as env vars so the report can be emailed via a script.
+
 ## Report bookkeeping
 - Save `reports/ppc-2day-latest.md` + dated `reports/ppc-2day-YYYY-MM-DD.md`.
 - **Previous 2-day report to compare against next time:** `ppc-2day-2026-08-06.md`

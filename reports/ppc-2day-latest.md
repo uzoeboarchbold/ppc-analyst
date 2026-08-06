@@ -12,6 +12,12 @@
 > has a real $40/day budget; the CA and MX profiles carry placeholder max
 > budgets). Please set `AMZ_PROFILE_ID=26765323558215` so future runs don't have
 > to guess. (Details logged in `notes-to-self.md`.)
+>
+> **Delivery note:** This report was saved to the repo and uploaded to the
+> Google Drive folder "PPC Reports". The **email step could not run** — the
+> Gmail connector isn't enabled for the automated session, so no email tool was
+> available. Please enable Gmail for the scheduled run (or add SMTP creds) to
+> restore automatic emailing.
 
 ---
 
