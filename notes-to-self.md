@@ -34,6 +34,15 @@ Running log of lessons so future automated runs go smoothly. Newest at top.
   campaigns. Campaigns are enabled but barely serving. If this persists, it's a
   bid/delivery problem worth flagging to the owner, not a reporting bug.
 
+**Delivery channels**
+- Google Drive: folder "PPC Reports" exists (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Upload works via `create_file` with `parentId` + `text_content`
+  (contentMimeType `text/markdown`, disableConversion=true to keep it as .md).
+- **Email step could NOT run.** The Gmail connector is installed but
+  `enabledInChat: false` for this automated session, so no email tool is
+  loaded. Report was saved to repo + Drive instead. ACTION FOR OWNER: enable
+  the Gmail connector for this scheduled session so future runs can email.
+
 **Reports folder**
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `ppc-2day-[YYYY-MM-DD].md`.
 - Previous-report comparison: this is the FIRST 2-day report, so no baseline
