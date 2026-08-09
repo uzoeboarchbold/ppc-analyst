@@ -42,4 +42,13 @@ Running log of lessons so future automated runs work smoothly. Newest first.
   window = [run_date − 4 days, run_date − 3 days]. Run 2026-08-09 → Aug 5–6.
 
 **Delivery (Drive/email)**
-- Google Drive folder target: "PPC Reports". Email to uzoebo.archbold@gmail.com.
+- Google Drive folder target: "PPC Reports" (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Upload works via `mcp__Google-Drive__create_file` with `parentId` = that folder.
+  Note: uploading `text/markdown` gets converted to a Google Doc — fine/readable.
+- EMAIL STEP BLOCKED: the Gmail connector exists but is NOT enabled in the
+  automated chat session (`enabledInChat: false`), and no `mcp__Gmail__*` tools
+  load in headless runs. So the automated run CANNOT send the email to
+  uzoebo.archbold@gmail.com. Fix: user must enable the Gmail connector for this
+  automation's chat/session in claude.ai connector settings. Until then, the
+  report is delivered via the repo + Google Drive only, and the run notifies by
+  push instead of email.
