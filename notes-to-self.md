@@ -43,6 +43,10 @@ Running log of lessons so each run gets smoother. Newest notes at top.
 - Google Drive: upload to folder named "PPC Reports" (Google-Drive MCP). Folder id
   `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Use `create_file` with `contentMimeType: text/markdown`
   and `disableConversionToGoogleType: true`. WORKS.
+  - CAVEAT: the Drive MCP has NO delete/update tool (only copy/create/read/search/list/metadata).
+    `create_file` always makes a NEW file, so re-uploading the same title creates DUPLICATES. To avoid
+    piling up copies, `search_files` for the title first; if it exists, either skip or upload with a
+    version-suffixed title. Duplicates already there can't be removed via MCP (needs manual cleanup).
 - **Email: BLOCKED as of 2026-08-11.** There is NO email/Gmail send tool available in the automated
   session. The Gmail connector exists but is `enabledInChat: false` (and only "drafts replies").
   ToolSearch for gmail/email/send returns nothing. Cannot self-enable a connector (needs user action
