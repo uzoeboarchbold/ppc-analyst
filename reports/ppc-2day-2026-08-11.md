@@ -3,6 +3,12 @@
 **Report type:** 2-day | **Date window:** 7–8 August 2026 (2 full days) | **Run:** 11 Aug 2026 (UTC)
 **Account:** Uzoebo Archbold E-Commerce — US marketplace (Amazon.com), USD | **Ad product:** Sponsored Products
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google Drive "PPC Reports"
+> folder successfully. **The email step could not run:** the Gmail connector is not enabled for this
+> automated session (no send tool available), so the emailed copy was not delivered. To fix for next
+> time, enable the Gmail connector in this session's connector settings. Retrieve this report from
+> Google Drive or the repo in the meantime.
+>
 > **Data note:** Amazon PPC data lags ~48 hours, so this window ends 48h before the run.
 > **Config note (self-fixed):** The `AMZ_PROFILE_ID` environment variable holds an application ID
 > (`amzn1.application…`), not a numeric advertising profile scope. I selected the US profile

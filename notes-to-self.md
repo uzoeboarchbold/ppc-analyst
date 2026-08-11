@@ -40,8 +40,15 @@ Running log of lessons so each run gets smoother. Newest notes at top.
   isn't today's). First run has none → state it's the baseline.
 
 ## Delivery
-- Google Drive: upload to folder named "PPC Reports" (Google-Drive MCP).
-- Email: to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+- Google Drive: upload to folder named "PPC Reports" (Google-Drive MCP). Folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Use `create_file` with `contentMimeType: text/markdown`
+  and `disableConversionToGoogleType: true`. WORKS.
+- **Email: BLOCKED as of 2026-08-11.** There is NO email/Gmail send tool available in the automated
+  session. The Gmail connector exists but is `enabledInChat: false` (and only "drafts replies").
+  ToolSearch for gmail/email/send returns nothing. Cannot self-enable a connector (needs user action
+  in connector settings). => Report is saved to repo + Drive; email is NOT sent. Add a delivery note
+  at the top of the report each run until Gmail is enabled in-session, and flag it via PushNotification.
+  To fix permanently: user must enable the Gmail connector for this session/schedule.
 
 ## History
 - 2026-08-11: First run. Very low activity Aug 7–8: 119 impressions, 1 click, 1 sale,
