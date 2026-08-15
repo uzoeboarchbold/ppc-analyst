@@ -31,6 +31,14 @@ Lessons learned, applied on every run. Keep this current.
 - spSearchTerm report returns 0 rows when there are no clicks (no attributed search terms). Expected, not a bug.
 - Product line: pet odor eliminator (ASIN B0FXW3GW5F) + a cat tunnel bed. 8 SP campaigns, most getting near-zero traffic.
 
+## Delivery (Step 4)
+- **Google Drive upload works** via `mcp__Google-Drive__create_file` (use `contentMimeType: text/markdown`,
+  `disableConversionToGoogleType: true`). Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+- **Email does NOT work in this scheduled/headless run.** The Gmail connector is installed but
+  `enabledInChat: false` (interactive-OAuth connectors aren't loaded in cron runs). No `mcp__*gmail*` send tool
+  is available. Report is delivered via repo commit + Drive instead; the owner must enable the Gmail connector
+  for scheduled sessions if automated email is required, OR wire up an SMTP/API-key mailer via env vars.
+
 ## Reports
 - Save to `reports/`: overwrite `ppc-2day-latest.md` + dated copy `ppc-2day-YYYY-MM-DD.md`.
 - Previous-report comparison: find the most recent prior `ppc-2day-*.md` (excluding latest). First run = none yet.
