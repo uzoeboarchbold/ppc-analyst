@@ -5,6 +5,11 @@
 **Run:** 16 Aug 2026 23:04 UTC (data ends 48h before run, per Amazon's reporting lag)
 **Compared against:** No previous 2-day report exists — this is the first/baseline report.
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google
+> Drive "PPC Reports" folder, but it could **not** be emailed automatically — the
+> Gmail connector is not enabled for this automated session. To turn on automatic
+> emailing, enable the Gmail connector for this chat in claude.ai connector settings.
+
 > **Setup note (fixed automatically):** The `AMZ_PROFILE_ID` environment
 > variable does not contain a valid Amazon profile ID (it holds a 50-character
 > "amzn…" string, not a numeric ID). I looked up the account's profiles and

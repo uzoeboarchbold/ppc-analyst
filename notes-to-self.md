@@ -48,5 +48,17 @@ run and apply the lessons. Add to it whenever something breaks or surprises you.
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-YYYY-MM-DD.md`.
 - Commit to branch `claude/great-hopper-qkvw8h`.
 - Upload the report file to Google Drive folder **"PPC Reports"** (MCP: search the
-  folder by name, then create/update the file inside it).
+  folder by name, then create/update the file inside it). Folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. The create_file MCP converts markdown to a
+  Google Doc (fine, content preserved; table header renders slightly off — cosmetic).
 - Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+
+## Delivery gotcha — EMAIL NOT AUTOMATED YET (2026-08-16)
+- **The Gmail connector is installed but NOT enabled in this chat/session**
+  (`enabledInChat: false`), so there is NO email-send tool available to the
+  automated run. The report could NOT be emailed automatically on 2026-08-16.
+  Report was still committed to git + uploaded to Drive.
+- **Action for the owner:** enable the Gmail connector for this automated
+  session's chat (claude.ai → connector settings for this chat) so future runs
+  can email. Until then, the Drive copy + git copy are the delivery, and each
+  run will flag the missing email.
