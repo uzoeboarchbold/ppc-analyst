@@ -5,7 +5,9 @@
 **Generated:** 2026-08-18 (data ends 48h before run, as Amazon PPC data takes ~48h to finalise)
 **Product line:** Sponsored Products
 
-> First run — the `reports` folder was empty, so there is **no previous 2-day report to compare against**. Comparison (Part C) will be populated from the next run onward. Nothing failed; data pulled cleanly from the Amazon Ads API.
+> First run — the `reports` folder was empty, so there is **no previous 2-day report to compare against**. Comparison (Part C) will be populated from the next run onward. Data pulled cleanly from the Amazon Ads API.
+>
+> **Delivery note:** this report was saved to the repo and uploaded to the "PPC Reports" Google Drive folder, but it could **not be emailed** — no email/Gmail connector is available in this environment (only Google Drive and GitHub are connected). To enable emailing next time, connect a Gmail connector or an email MCP server.
 
 ---
 

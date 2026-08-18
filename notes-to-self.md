@@ -31,7 +31,16 @@ Running log of lessons so each run gets smoother. Newest at top.
 - **Traffic is currently tiny.** The whole 2-day window: 77 impressions, 1 click,
   $2.16 spend, 0 sales. Don't over-interpret single clicks; there is not enough
   volume yet to recommend negatives or new exact-match keywords with confidence.
-- **Google Drive folder** for uploads: "PPC Reports". Email goes to
-  uzoebo.archbold@gmail.com.
+- **Google Drive folder** for uploads: "PPC Reports"
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload with `create_file`,
+  `disableConversionToGoogleType=true`, and pass the FULL report as
+  `textContent` in one call — `update_file` only edits metadata, not content,
+  so you can't create-then-fill.
+- **EMAIL COULD NOT BE SENT.** No Gmail/email connector is available in this
+  environment — only Google-Drive and github MCP servers are connected. The
+  brief asks to email the report to uzoebo.archbold@gmail.com, but there is no
+  tool to do it. Report was delivered via git + Google Drive instead, and the
+  user was notified by push. **To fix for future runs:** connect a Gmail
+  connector (claude.ai Settings → Connectors) or add an SMTP/email MCP server.
 - **No previous 2-day report existed** for comparison this run. Next run compares
   against `reports/ppc-2day-latest.md`.
