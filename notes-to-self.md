@@ -2,6 +2,18 @@
 
 Running log of lessons so each automated run gets smarter. Newest at top.
 
+## Delivery channels
+- **Google Drive: WORKS.** Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `mcp__Google-Drive__create_file` (parentId that folder,
+  contentMimeType `text/markdown`, disableConversionToGoogleType true).
+- **Email: BLOCKED.** A Gmail connector exists for the org but is
+  `enabledInChat: false`, so no `mcp__Gmail__*` send tool is loaded in the
+  automated session. I could NOT email the report on the 20 Aug run. To fix:
+  the owner must enable the Gmail connector for this chat/automation in
+  claude.ai connector settings (and it needs a send/compose capability — the
+  listed Gmail connector advertises draft/summarize/search, which may not
+  include sending). Until then, the report only lands in the repo + Drive.
+
 ## Environment / API
 - **`AMZ_PROFILE_ID` is misconfigured.** It contains an *application ID*
   (`amzn1.application....`), NOT a numeric advertising profile ID. Do not pass

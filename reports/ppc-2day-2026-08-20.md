@@ -16,6 +16,11 @@
 > This is the first stored report, so no previous *saved* 2-day report existed.
 > To still give you a real comparison, I pulled the prior 2-day window
 > (14–15 Aug) live from Amazon. From now on, comparisons will use the saved report.
+>
+> **Email not sent this run:** the report was saved to the repo and uploaded to
+> the "PPC Reports" Google Drive folder, but the Gmail connector is not enabled
+> for this automated session, so I couldn't email it. To enable email in future
+> runs, turn on the Gmail connector (with send permission) for this automation.
 
 ---
 
