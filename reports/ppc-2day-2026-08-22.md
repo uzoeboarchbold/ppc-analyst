@@ -5,6 +5,13 @@
 **Run date:** 22 Aug 2026 (data ends 48h before run, as Amazon PPC data takes ~48h to finalise)
 **Product type:** Sponsored Products
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google
+> Drive "PPC Reports" folder successfully. **The email step could not run** — the
+> Gmail connector is not enabled for this automated session (`enabledInChat:
+> false`), so no email was sent. To fix: enable the Gmail connector for this
+> chat/automation in Settings → Connectors. Until then, retrieve reports from
+> Google Drive or the repo.
+
 > **Note on setup:** The `AMZ_PROFILE_ID` provided is an *application ID*, not a
 > usable advertising profile. I looked up the account's real profiles and used
 > the US seller profile (the only one with live campaigns and budget). No numbers

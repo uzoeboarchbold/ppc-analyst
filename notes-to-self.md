@@ -44,6 +44,15 @@ Living memory for the automated PPC reporting runs. Read this first each run.
   show tiny numbers (single-digit clicks, frequently zero sales). This is normal
   for this account, not a data error.
 
+## Delivery
+- Google Drive upload works (folder "PPC Reports", id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Markdown uploaded via `create_file` converts to a Google Doc — fine for viewing.
+- **Email step is BLOCKED.** The Gmail connector exists but is `enabledInChat:false`
+  for this automated session, so no email can be sent. Needs the user to enable
+  the Gmail connector for this chat/automation. Until then, deliver via Drive/repo
+  only and flag it at the top of the report + notify the user.
+
 ## Run log
 - 2026-08-22: First 2-day report (baseline, no prior report to compare).
   Window Aug 18–19. Total spend $1.17, 106 impr, 4 clicks, 0 sales.
+  Saved to repo + Drive OK. Email NOT sent (Gmail connector disabled in chat).
