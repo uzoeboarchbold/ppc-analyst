@@ -34,6 +34,14 @@ Running log of lessons so each run gets smoother. Newest first.
   win clicks. If future runs still show 0 clicks, the "what to do next" (raise bids /
   check budget) is the recurring message.
 - **Reports folder** did not exist on first run — created `reports/`.
-- **TODO for future runs:** Google Drive upload + email delivery. On this run, confirm
-  the `PPC Reports` Drive folder exists (create if needed) and that email sending is
-  available; note the outcome here.
+- **Google Drive:** WORKS. Folder `PPC Reports` exists (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Uploaded with `mcp__Google-Drive__create_file`, `parentId`=that folder,
+  `contentMimeType=text/markdown`, `disableConversionToGoogleType=true` (keeps it as .md
+  instead of converting to a Google Doc).
+- **EMAIL — BLOCKED this run.** The Gmail connector is installed at org level but
+  `enabledInChat: false` — its tools are NOT loaded in this session, so there is no
+  tool to send mail. Could not email the report to uzoebo.archbold@gmail.com.
+  FIX: enable the Gmail connector for this chat/automation in claude.ai connector
+  settings so a `gmail`/send tool is available. Until then, the report is still
+  delivered via the repo commit and the Google Drive upload. Re-check each run and
+  send the email once the connector is enabled.

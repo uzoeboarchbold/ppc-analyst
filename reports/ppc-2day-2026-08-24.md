@@ -5,6 +5,8 @@
 **Run date:** 24 Aug 2026
 **Compared against:** No previous 2-day report exists — this is the first run, so there is nothing to compare against yet. Future runs will compare here.
 
+> ⚠️ **Delivery note:** This report was saved to the repo and uploaded to the Google Drive "PPC Reports" folder successfully, but the **email could not be sent** — the Gmail connector is not enabled for this automation. To receive these by email, enable the Gmail connector for this chat in claude.ai connector settings.
+
 ---
 
 ## Note on setup
