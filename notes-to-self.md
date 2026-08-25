@@ -29,3 +29,12 @@ Running log of lessons so future automated runs go smoother. Newest first.
 - **Next run:** try `/v2/profiles` on NA first; if 0 profiles, the region/host
   is the issue — surface it rather than guessing. Never fabricate metrics.
 - **First run:** no prior 2-day report existed, so no comparison was possible.
+- **Email could not be sent.** The Gmail connector exists on the account but is
+  **not enabled in this session** (`enabledInChat: false`), so there is no
+  send-mail tool available to the routine. Google Drive upload works. To enable
+  automatic emailing, turn on the Gmail connector for this session/environment
+  so a Gmail send tool is exposed. Until then, delivery is via the report in the
+  repo + Google Drive + the run's push notification.
+- **Delivery channels that DID work this run:** committed/pushed to the repo
+  branch, and uploaded to the Google Drive 'PPC Reports' folder
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
