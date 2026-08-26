@@ -76,5 +76,13 @@ baseline and a fresh pull are needed before change figures can be shown.
 
 ---
 
+---
+
+**Delivery note:** This report was committed to the repo and uploaded to the
+Google Drive "PPC Reports" folder. The **email step could not run** — no email
+connector is available in this automated environment. Connect a Gmail/email
+connector (or switch the task to Drive-only delivery) to enable emailed
+reports.
+
 *Automated PPC Analyst · generated 2026-08-26 23:06 UTC · data source: Amazon
 Advertising API (Sponsored Products).*

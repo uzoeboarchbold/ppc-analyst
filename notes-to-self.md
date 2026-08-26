@@ -32,6 +32,19 @@ Running log of lessons so future automated runs work better. Newest first.
   if `AMZ_PROFILE_ID` still starts with `amzn1.` or `/v2/profiles` is empty,
   stop, write a failure report, do NOT fabricate metrics, and notify.
 
+## Delivery capabilities in this environment (2026-08-26)
+- **Google Drive: works.** `PPC Reports` folder id =
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with the Drive MCP
+  `create_file` (set `disableConversionToGoogleType: true` to keep it as
+  markdown, not convert to a Google Doc).
+- **Email: NOT available.** No Gmail/SMTP/email MCP tool is connected in this
+  session — only Google-Drive and github MCP servers plus inter-agent
+  SendMessage. The "email to uzoebo.archbold@gmail.com" step of the task
+  CANNOT be completed until an email connector is added. Operator action:
+  connect a Gmail/email connector, or change the task to Drive-only delivery.
+  Until then, runs push a notification and rely on the Drive copy + committed
+  report instead of email.
+
 ## Report bookkeeping
 - Report files live in `reports/`.
   - 2-day: `ppc-2day-latest.md` + dated `ppc-2day-YYYY-MM-DD.md`.
