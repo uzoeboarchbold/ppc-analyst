@@ -7,6 +7,10 @@
 > Note on setup: the configured `AMZ_PROFILE_ID` was an application id, not a real advertising
 > profile id, so it could not be used. I detected the correct US seller profile automatically and
 > pulled against it. No numbers were invented. (Logged for future runs.)
+>
+> Note on delivery: this report was saved to the repo and uploaded to the "PPC Reports" Google Drive
+> folder, but it could **not be emailed** — no email/Gmail tool is connected to this automated
+> session, only Google Drive and GitHub. Connect a Gmail connector to enable the email step.
 
 ---
 

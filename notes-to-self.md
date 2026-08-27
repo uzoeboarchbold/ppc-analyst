@@ -34,4 +34,11 @@ Running log of lessons so future runs work hands-off. Newest at top.
   0 sales across 15 campaigns. If future numbers stay near zero, that's real, not a data bug.
 
 **Delivery**
-- Google Drive folder for uploads: "PPC Reports". Email recipient: uzoebo.archbold@gmail.com.
+- Google Drive folder for uploads: "PPC Reports" (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload as
+  `text/markdown` with `disableConversionToGoogleType=true`. NOTE: `update_file` only changes
+  metadata (title/parent), not content — to fix content, trash the file and create a new one with
+  the full `textContent` in ONE call (don't create a placeholder first).
+- **EMAIL: not possible in this environment.** Only the Google-Drive and github MCP servers are
+  connected — there is NO Gmail/email/SMTP tool. The requested email to uzoebo.archbold@gmail.com
+  could not be sent. Report is delivered via the repo + Google Drive instead. To enable email,
+  connect a Gmail (or email) connector to this session. Until then, skip the email step and say so.
