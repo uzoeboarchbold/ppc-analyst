@@ -37,5 +37,13 @@ Running log of lessons so future automated runs go smoothly. Newest at top.
   impressions, 3 clicks, $0.75 spend, 0 orders, $0 sales. Campaign names
   contain literal `|` characters — **escape them as `\|` in markdown tables**.
 - **Delivery:** save to `reports/`, commit+push to branch
-  `claude/great-hopper-g4ug7g`; upload to Google Drive folder "PPC Reports";
-  email to uzoebo.archbold@gmail.com.
+  `claude/great-hopper-g4ug7g`; upload to Google Drive folder "PPC Reports"
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`); email to
+  uzoebo.archbold@gmail.com.
+- **EMAIL STEP FAILED (2026-08-28):** the **Gmail connector is present but not
+  enabled in-chat** (`enabledInChat: false`), and no email tool is available to
+  this automated session. Repo save + push + Drive upload all worked; only the
+  email could not be sent. **Fix:** enable the Gmail connector for this
+  session/chat in connector settings so future runs can send. Until then, the
+  report is delivered via repo + Drive only, and the run should flag the email
+  gap in its notification.

@@ -9,7 +9,14 @@
 > id rather than a numeric Ads profile id, so it could not be used directly. I
 > looked up the account's real profiles and defaulted to the **US** marketplace
 > (the primary market). CA and MX profiles also exist — say the word if you want
-> those included too. Everything else ran cleanly.
+> those included too. The data pull, the saved reports and the Google Drive
+> upload all ran cleanly.
+>
+> **Emailing this report failed:** the Gmail connector is not enabled for this
+> automated session, so I could not send the "PPC 2-Day Report" email. The
+> report is safe in the repo (`reports/`) and in the Google Drive "PPC Reports"
+> folder. To fix future runs, enable the Gmail connector for this chat/session
+> in connector settings.
 
 ---
 
