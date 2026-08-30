@@ -9,6 +9,11 @@
 > (it held an application id). I resolved the correct US advertising profile
 > automatically from the account and pulled the data against it, so the numbers
 > below are live and correct. This is logged so it can be fixed at source.
+>
+> Delivery note: this report was saved to the repo and uploaded to the Google
+> Drive "PPC Reports" folder, but it could NOT be emailed automatically — the
+> Gmail connector is not enabled for this automated session. Enable it to
+> restore email delivery.
 
 ---
 

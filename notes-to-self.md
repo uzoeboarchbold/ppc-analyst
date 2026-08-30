@@ -23,6 +23,18 @@ Running log of lessons so future runs go smoother. Newest at top.
   (groupBy targeting), `spSearchTerm` (groupBy searchTerm). timeUnit SUMMARY.
   Metrics use the 14-day attribution columns (purchases14d, sales14d).
 
+## Email delivery is BLOCKED (learned 2026-08-30)
+- The task asks to email the report to uzoebo.archbold@gmail.com, but the
+  **Gmail connector is not enabled in this chat session** (ListConnectors:
+  enabledInChat=false). No send-email tool is available to this run, so the
+  email step could NOT be completed automatically. Google Drive upload works
+  fine; only email is blocked.
+- Fix at source: enable the Gmail connector for this session/environment (in
+  claude.ai this chat's connector settings), then future runs can email.
+- Until then: report is delivered via git (reports/ folder) and Google Drive
+  ("PPC Reports" folder). Flag the missing email in the run's push
+  notification so the owner knows.
+
 ## Product / account context
 - Main product: Cat Deterrent Spray / Pet Odor Eliminator, ASIN B0FXW3GW5F
   (SKU 6K-PZMX-MTDZ). A second product line exists: Cat Tunnel Bed (Pink).
