@@ -40,5 +40,12 @@ Lessons learned across runs. Read this first, apply, and append new lessons.
 ## Delivery / send
 - Save to `reports/ppc-2day-latest.md` (overwrite) + dated copy
   `reports/ppc-2day-[run-date].md`. Commit to branch `claude/great-hopper-vbzi2l`.
-- Upload same report to Google Drive folder **"PPC Reports"**.
-- Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+- Upload same report to Google Drive folder **"PPC Reports"** (folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Use `create_file` with `textContent`,
+  `contentMimeType: text/markdown`, `disableConversionToGoogleType: true`.
+- **EMAIL STEP BLOCKED (2026-08-31 run):** The Gmail connector is installed but
+  `enabledInChat: false`, so its send tools are NOT loaded in the scheduled session
+  and the report email could NOT be sent. ACTION FOR THE OWNER: enable the Gmail
+  connector for this chat/automation in connector settings so future runs can email
+  uzoebo.archbold@gmail.com with subject `PPC 2-Day Report — [dates]`. Until then,
+  the report is still available in the repo and in the Drive "PPC Reports" folder.
