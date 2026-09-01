@@ -50,6 +50,17 @@ Cover the 2 full days ending 48h before the run. A day counts only if its END is
   problem. Next run: compare against these numbers.
 
 ## Delivery
-- Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-YYYY-MM-DD.md`; commit on branch `claude/great-hopper-6n32mz`.
-- Upload same file to Google Drive folder "PPC Reports".
+- Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-YYYY-MM-DD.md`; commit on branch `claude/great-hopper-6n32mz`. ✅ works.
+- Upload same file to Google Drive folder "PPC Reports" (folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). ✅ works via Google-Drive create_file
+  with base64Content + disableConversionToGoogleType=true. NOTE: update_file only
+  changes metadata, not content — to replace content, create a new file and trash
+  the old one.
 - Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+  ⚠️ BLOCKED (2026-09-01): the **Gmail connector is installed but NOT enabled in
+  chat** (`enabledInChat:false`), so no email-send tool is available in the
+  session — the report could not be auto-emailed. FIX: enable the Gmail connector
+  for Claude Code sessions (claude.ai → connector settings for this chat). Until
+  then, delivery falls back to the git commit + Drive upload + the run's push
+  notification. Re-check `ListConnectors` each run; send the email once Gmail is
+  enabled.
