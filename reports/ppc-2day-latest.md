@@ -5,6 +5,13 @@
 **Report generated:** 4 Sep 2026 (data ends 48h before run to allow Amazon's reporting to finalise)
 **Product line:** Sponsored Products (all campaigns, ASIN B0FXW3GW5F + Cat Tunnel Bed)
 
+> **Delivery note:** This report was saved to the repo and uploaded to the
+> Google Drive 'PPC Reports' folder successfully. It could **not** be emailed
+> automatically — the Gmail connector is connected at the account level but is
+> disabled for this automated session, so no email-sending tool was available.
+> To restore automatic emailing, enable the Gmail connector for this chat in the
+> connector settings.
+>
 > Note on data source: The `AMZ_PROFILE_ID` environment variable held an
 > application id rather than a numeric Ads profile id, so it could not be used
 > directly. I looked up the account's profiles and used the **US** profile

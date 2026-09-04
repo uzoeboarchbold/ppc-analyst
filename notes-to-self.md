@@ -36,6 +36,19 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
 - Compare against the previous `ppc-2day-*.md` (this-type) report.
 - Upload to Google Drive folder 'PPC Reports'; email to uzoebo.archbold@gmail.com.
 
+## Delivery channels
+- **Google Drive:** working. Folder 'PPC Reports' id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `create_file`, parentId = that id, contentMimeType `text/markdown`,
+  `disableConversionToGoogleType: true` (keeps it as an .md, not a Google Doc).
+- **EMAIL GOTCHA:** The **Gmail** connector is connected at the org level but
+  `enabledInChat: false` — its tools are NOT loaded in the automated session, so
+  the report cannot be emailed hands-off. No send tool is available. To fix:
+  enable the Gmail connector for this chat/automation in the connector settings.
+  Until then, delivery is via repo + Google Drive only. Each run: attempt to
+  locate an email/Gmail tool; if none, note it in the report and here, don't fail
+  the whole run.
+
 ## History
 - 2026-09-04: First run. No prior 2-day report exists, so no comparison
-  baseline yet — next run compares against this one.
+  baseline yet — next run compares against this one. Report saved to repo +
+  uploaded to Google Drive. Email NOT sent (Gmail connector disabled in chat).
