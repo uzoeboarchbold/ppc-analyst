@@ -44,7 +44,15 @@ Running log of lessons so future automated runs go smoothly. Newest at top.
   copies at `reports/ppc-2day-[YYYY-MM-DD].md`.
 
 ## Delivery
-- Google Drive upload target: folder named "PPC Reports".
-- Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Google Drive upload target: folder named "PPC Reports"
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload with `create_file`,
+  `contentMimeType: text/markdown`, `disableConversionToGoogleType: true`,
+  and pass content via `base64Content` or `textContent` — NOT the placeholder.
+  (`update_file` only changes metadata, not content; to replace content,
+  trash the old file and create a new one.)
+- **Email: NO email/Gmail connector is available in this session.** The
+  requested email to uzoebo.archbold@gmail.com (subject "PPC 2-Day Report —
+  [dates]") could NOT be sent. State this in the report's delivery note each
+  run until a mail connector is added. Do not fake a send.
 - Date window: data lags ~48h. For the 2-day report cover the 2 full days
   ending 48h before the run (e.g. run Sat 2026-09-05 → cover Sep 1 & Sep 2).

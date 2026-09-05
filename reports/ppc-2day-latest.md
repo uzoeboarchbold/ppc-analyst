@@ -6,6 +6,8 @@
 **Report generated:** 2026-09-05
 
 > Note on setup: the `AMZ_PROFILE_ID` supplied by the environment is an application ID, not a usable numeric ad-profile ID, so the report cannot be scoped from it directly. This run resolved the account's profiles automatically and used the US profile (the only one of the three — US/CA/MX — that has any Sponsored Products campaigns). No numbers were invented; everything below is pulled live from the Amazon Ads API.
+>
+> Delivery note: this report is committed to the repo and uploaded to the Google Drive "PPC Reports" folder. It was **not** emailed — no email/Gmail tool is connected in this environment, so the requested email to uzoebo.archbold@gmail.com could not be sent automatically. To enable email delivery, connect a Gmail (or other mail) connector to this session.
 
 ---
 
