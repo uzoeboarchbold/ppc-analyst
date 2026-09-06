@@ -43,3 +43,11 @@ Lessons carried between runs. Update this whenever something breaks or surprises
 ## Reports folder
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-[YYYY-MM-DD].md` (run date).
 - Then upload same file to Google Drive folder "PPC Reports" and email to uzoebo.archbold@gmail.com.
+- Google Drive folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with
+  `create_file` (contentMimeType `text/markdown`, disableConversionToGoogleType true). Works.
+- **EMAIL STEP BLOCKED (2026-09-06):** the Gmail connector IS connected at org level but is
+  `enabledInChat: false` — its tools are NOT loaded in the automated session, so the report
+  could not be emailed. Escape hatch for the user: enable the Gmail connector for this
+  session/chat in connector settings so a future run can send the email. Until then, the
+  report is delivered via git (reports folder) + Google Drive only. Table markdown: escape
+  literal `|` in campaign names (two campaigns contain them) or the columns break.

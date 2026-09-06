@@ -6,6 +6,8 @@
 **Generated:** 6 September 2026 (data ends 48h before run, as Amazon PPC data finalises ~48h late)
 
 > Note on setup: the `AMZ_PROFILE_ID` environment variable holds an application ID, not a usable advertising profile ID, so it could not be used directly. I looked up the account's profiles and used the active US Sponsored Products profile (26765323558215, USD, real daily budget). Data pulled cleanly on the first attempt — no invented numbers below.
+>
+> Delivery note: this report was saved to the repo and uploaded to the Google Drive "PPC Reports" folder, but it could **not be emailed** — the Gmail connector is connected to the account but is not enabled for this automated session, so no email tool was available. To restore email delivery, enable the Gmail connector for this session in connector settings.
 
 ## Part A — Data table (one row per campaign)
 
