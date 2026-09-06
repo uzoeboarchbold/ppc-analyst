@@ -13,9 +13,9 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | SP Isolated Pet Odor Eliminator Phrase | 22 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
 | SP Home + Eliminator + Brand Root 10-25k SV Exact | 15 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
-| SP | Cat Tunnel Bed Pink Only | Exact Ranking | Louise | 10 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
+| SP \| Cat Tunnel Bed Pink Only \| Exact Ranking \| Louise | 10 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
 | SP Auto | 3 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
-| SP KT | ST w/ Sales | 3 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
+| SP KT \| ST w/ Sales | 3 | 0% | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
 | SP Cat Root 1-10k SV Exact | 0 | — | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
 | SP Isolated Cat Deterrent Exact | 0 | — | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
 | SP Isolated Cat Deterrent Phrase | 0 | — | 0 | 0% | 0 | $0.00 | $0.00 | $0.00 | n/a | n/a |
