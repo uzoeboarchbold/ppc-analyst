@@ -50,3 +50,14 @@ Living memory. Read this first every run and add lessons at the bottom.
   or a config/window bug before writing the report.
 - This was the FIRST report of any type, so there was no previous 2-day report to compare
   against (Part C). Next run: compare against reports/ppc-2day-latest.md (this run).
+- **Google Drive upload works** (Drive connector enabled). Folder "PPC Reports"
+  id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with create_file, contentMimeType
+  text/markdown, disableConversionToGoogleType=true, and put the FULL report in
+  textContent (create_file's update_file only edits metadata, not content — so create
+  the file already populated; don't create-then-update).
+- **EMAIL STEP COULD NOT RUN.** The Gmail connector is connected at org level but
+  `enabledInChat: false`, so no Gmail send tool is loaded in this automated session.
+  There is no other email tool available. Result: the report was saved to the repo and
+  uploaded to Drive, but NOT emailed. Fix: the owner needs to enable the Gmail connector
+  for this chat/automation in claude.ai connector settings. Until then, delivery = repo +
+  Drive only, and the run should flag the missing email via push notification.
