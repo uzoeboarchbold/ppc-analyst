@@ -79,3 +79,5 @@ All enabled campaigns returned zero delivery for 4–5 Sep. Table shown for comp
 ---
 
 *Data source: Amazon Advertising API (Sponsored Products, v3 reporting). Pull succeeded; figures are genuine and unedited. Where a value is "—" or "n/a", it is genuinely undefined for this window, not missing.*
+
+**Delivery note:** Saved to the repo and uploaded to the Google Drive "PPC Reports" folder successfully. The automatic **email could not be sent** — the Gmail connector is not enabled for this automated session. To receive these by email, enable the Gmail connector for this chat/automation.

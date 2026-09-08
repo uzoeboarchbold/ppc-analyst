@@ -38,6 +38,13 @@ Running log of lessons so each run gets smoother. Newest lessons at the top.
   failure, but don't invent numbers.
 - When the window has zero delivery, the targeting and search-term reports return 0 rows (expected).
 
+## Delivery channels
+- **Email NOT sendable this run.** The Gmail connector is connected at the org level but
+  `enabledInChat: false` — its tools aren't loaded in the session, so the report could not be emailed
+  to uzoebo.archbold@gmail.com. Owner needs to enable the Gmail connector for this chat/automation.
+  (Also: the Gmail connector description is "draft replies / summarize / search" — confirm it can
+  actually compose+send a new outbound email before relying on it.) Google Drive upload works fine.
+
 ## Report housekeeping
 - Reports live in `reports/`. 2-day report: overwrite `ppc-2day-latest.md` + dated copy
   `ppc-2day-YYYY-MM-DD.md`. Compare against the previous `ppc-2day-*` file (by date in filename).
