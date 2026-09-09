@@ -27,6 +27,13 @@ Running log of lessons so future runs go smoothly. Newest notes at the top of ea
 - Attribution used: **7-day** (`sales7d`, `purchases7d`). Keep consistent across runs for comparability.
 - When there are no impressions in the window, the targeting & search-term reports come back as `[]`.
 
+## Delivery
+- **Email is NOT sendable in the automated run.** The Gmail connector exists and is connected at the org
+  level, but shows `enabledInChat: false`, so its send tools aren't loaded into the scheduled session and
+  there's no way to enable it hands-off. Drive upload works; Git commit/push works. To restore auto-email,
+  the account owner must enable the Gmail connector *in this chat/automation's* connector settings. Until
+  then, report delivery = Git + Google Drive only, and flag the email gap in the run notification.
+
 ## Reporting workflow
 - 2-day window = the 2 full days ending 48h before run time. E.g. run 2026-09-09 → cover Sep 5 & Sep 6.
 - Previous-report comparison: find the prior `ppc-2day-*.md` in `reports/`. If none, it's the baseline run.
