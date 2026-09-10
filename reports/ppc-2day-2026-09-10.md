@@ -23,10 +23,15 @@ delivered only **1,860 impressions, 17 clicks, $5.93 spend and $0.00 sales** —
 so this is not a one-off quiet couple of days; the account is effectively
 dormant and has produced no ad-attributed sales in a month.
 
-Two setup issues were found and worked around (details at the bottom):
-1. The `AMZ_PROFILE_ID` credential is wrong (it holds an application id, not a
+Three things this run could not do automatically or had to work around:
+1. **Email was not sent.** The Gmail connector is connected to the account but
+   is not enabled inside this automated chat session, so no send tool is
+   available. The report was still committed to the repo and uploaded to the
+   Google Drive "PPC Reports" folder. To restore auto-email, enable the Gmail
+   connector for this session's chat.
+2. The `AMZ_PROFILE_ID` credential is wrong (it holds an application id, not a
    numeric profile id). I selected the correct US profile automatically.
-2. Canada and Mexico profiles exist but have no Sponsored Products campaigns.
+3. Canada and Mexico profiles exist but have no Sponsored Products campaigns.
 
 ---
 
@@ -87,15 +92,30 @@ Cat Deterrent Spray / Pet Odor Eliminator product.)*
 
 ## Part C — Comparison to previous 2-day report
 
-**No previous 2-day report exists** — this is the first run of this report, so
-there is no prior period to compare against. Headline metrics for this window
-are all zero (spend $0.00, sales $0.00, ACOS n/a, ROAS n/a). Future 2-day
-reports will show the change versus this one as both a number and a percentage.
+Compared against the previous 2-day report, **30–31 August 2026** (the most
+recent 2-day report in the Drive "PPC Reports" folder).
 
-**Trend note (from a 28-day lookback for context, not a formal comparison):**
-the account is not delivering and has generated $0 in ad sales over the past
-month. Direction: effectively flat at zero — the priority is getting ads live,
-not fine-tuning.
+| Metric | This report (Sep 6–7) | Previous (Aug 30–31) | Change (abs) | Change (%) |
+|---|---|---|---|---|
+| Impressions | 0 | 331 | −331 | −100% |
+| Top-of-search IS | 0% | ~0.1% | −0.1 pts | −100% |
+| Clicks | 0 | 1 | −1 | −100% |
+| Spend | $0.00 | $0.25 | −$0.25 | −100% |
+| Purchases | 0 | 0 | 0 | 0% |
+| Sales | $0.00 | $0.00 | $0.00 | 0% |
+| ACOS | n/a | n/a | — | — |
+| ROAS | n/a | 0.00 | — | — |
+
+**Verdict: worsened.** Last period the account was barely alive — a trickle of
+331 impressions and a single click. This period it went completely dark: no
+impressions at all. Sales were $0 in both windows, so revenue didn't fall, but
+the ads stopped serving entirely. The most likely cause is the billing/payment
+problem noted above (no valid payment method on the US marketplace), which
+would explain delivery dropping from "tiny" to "zero."
+
+*Note: the previous two 2-day reports both flagged the same two automation
+issues (Gmail not enabled in-session, invalid `AMZ_PROFILE_ID`). These are
+still unresolved and need a human to fix them once.*
 
 ---
 

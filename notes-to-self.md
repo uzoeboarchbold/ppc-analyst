@@ -39,6 +39,27 @@ Running log of lessons so future runs are faster and more reliable.
 - Data lags ~48h. 2-day report covers the 2 full calendar days ending 48h
   before run time. Run 2026-09-10 23:04 UTC → covered 2026-09-06 & 2026-09-07.
 
-## Report history
-- Reports live in `reports/`. Latest of this type: `ppc-2day-latest.md`.
-  (First run: no previous 2-day report to compare against.)
+## Report history — IMPORTANT
+- The git repo is cloned FRESH each run, so `reports/` starts EMPTY. Do NOT
+  conclude "first run / no previous report" from an empty repo folder.
+- The real archive of previous reports is the **Google Drive "PPC Reports"
+  folder** (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). ALWAYS look there
+  for the previous report of this type to compare against. Files are named like
+  "PPC 2-Day Report — 30–31 Aug 2026". Read the latest one and pull its
+  headline metrics for Part C.
+- Previous 2-day report before this run: 30–31 Aug 2026 = 331 impressions,
+  1 click, $0.25 spend, $0.00 sales, ROAS 0.00.
+
+## Email delivery — UNRESOLVED (needs human)
+- The task's Step 4 says email the report. The **Gmail connector is connected
+  but NOT enabled in this chat session** (`enabledInChat:false`), so there is
+  no send tool available and the email CANNOT be sent automatically. Every run
+  so far has hit this. Save + Drive upload still work. To fix: enable the Gmail
+  connector for this automated session's chat. Until then, note the miss at the
+  top of each report and in the run summary.
+
+## Delivery status trend
+- Account has been barely serving for weeks and has produced $0 ad sales.
+  On 2026-09-06/07 it served NOTHING at all (0 impressions across 15 US
+  campaigns). US marketplace shows `validPaymentMethod:false` — most likely a
+  billing/payment problem is now fully pausing delivery. Flag this loudly.
