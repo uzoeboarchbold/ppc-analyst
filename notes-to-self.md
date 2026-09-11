@@ -44,4 +44,12 @@ Lessons learned across runs. Read this before every run and keep it updated.
 
 ## Delivery
 - Reports saved to `reports/` (ppc-2day-latest.md + dated copy), committed to branch.
-- Also upload to Google Drive folder "PPC Reports" and email uzoebo.archbold@gmail.com.
+- Google Drive: folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload via
+  create_file with parentId set to that, contentMimeType `text/markdown`,
+  disableConversionToGoogleType=true (keeps it as a .md file, not a Google Doc). Works.
+- **EMAIL BLOCKER (unresolved):** The Gmail connector is installed/connected at the org level
+  but `enabledInChat: false` for these automated sessions, so **no Gmail/email tool is loaded**
+  and the report cannot be emailed from the run. There is no generic email/SMTP tool either.
+  → Fix: the account owner must enable the Gmail connector for this chat/automation in
+  claude.ai connector settings, OR add an SMTP/email-capable tool. Until then, the report
+  reaches the owner via the repo, the Drive folder, and the run's push notification only.
