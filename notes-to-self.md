@@ -2,6 +2,17 @@
 
 Running notes so future automated runs go smoothly. Newest lessons at the top.
 
+## Run log
+- **2026-09-12 (2-day, covers Sep 8–9):** Whole US account served NOTHING in
+  the window — 0 impressions/clicks/spend/sales across all 15 ENABLED SP
+  campaigns. 14-day context (Aug27–Sep9): only ~1,020 impr, 4 clicks, $0.60
+  spend, $0 sales. Root cause almost certainly **US profile
+  `validPaymentMethod = false`** (billing blocks delivery). CA & MX have no SP
+  campaigns. First run of this report type, so no prior 2-day report to compare.
+  → Future runs: if totals are all zero again, check whether billing was fixed;
+  don't treat zero as an API failure — verify with a wider window first (that's
+  how I confirmed it's real, not a bug).
+
 ## Environment / credentials
 - Credentials live in env vars: `AMZ_CLIENT_ID`, `AMZ_CLIENT_SECRET`,
   `AMZ_REFRESH_TOKEN`, `AMZ_PROFILE_ID`.
