@@ -54,3 +54,12 @@ Running notes so future automated runs go smoothly. Newest lessons at the top.
 - Save to `reports/`: overwrite `ppc-2day-latest.md` + dated `ppc-2day-YYYY-MM-DD.md`.
 - Upload to Google Drive folder "PPC Reports"; email to uzoebo.archbold@gmail.com.
 - Compare each 2-day report against the previous 2-day report in `reports/`.
+- **Google Drive works.** Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `create_file` (parentId=that, contentMimeType=text/markdown,
+  disableConversionToGoogleType=true).
+- **EMAIL CANNOT BE SENT in this environment.** The Gmail connector is
+  connected at org level but `enabledInChat = false`, so no gmail send/draft
+  tool is loaded, and an automated run can't toggle it on. Delivery this run =
+  repo commit + Drive upload only. To enable email: in claude.ai, enable the
+  Gmail connector's tools for this chat/session (connector settings), or attach
+  an email-capable tool. Until then, surface the report via PushNotification.
