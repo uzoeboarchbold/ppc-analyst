@@ -45,7 +45,19 @@ Running log of lessons so future automated runs go smoothly. Newest lessons at t
 
 ## Delivery
 - Save `reports/ppc-2day-latest.md` + dated `reports/ppc-2day-YYYY-MM-DD.md`,
-  commit & push to branch `claude/great-hopper-ogikii`.
-- Upload to Google Drive folder 'PPC Reports' (MCP Google-Drive tools).
-- Email to uzoebo.archbold@gmail.com — check what email tool/connector is
-  available; none was pre-confirmed at first run.
+  commit & push to branch `claude/great-hopper-ogikii`. ✅ works.
+- Upload to Google Drive folder 'PPC Reports' (id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`) via `mcp__Google-Drive__create_file`
+  with `disableConversionToGoogleType:true` and `contentMimeType:text/markdown`
+  so it stays a real .md file. ✅ works.
+- **EMAIL — BLOCKED (2026-09-14 run).** The Gmail connector is installed and
+  connected at the org level BUT `enabledInChat:false`, so its send tools are
+  NOT loaded in the automated session and there is no other mail/SMTP tool.
+  The subject-lined email to uzoebo.archbold@gmail.com could NOT be sent.
+  → **Fix for future runs:** the user must enable the Gmail connector *in this
+    chat/automation's connector settings* (org-level connection alone isn't
+    enough). Until then, the report reaches the user via (a) the Git push,
+    (b) the Google Drive 'PPC Reports' folder, and (c) the routine's
+    PushNotification (its email body carries the summary to the inbox).
+  Re-check `ListConnectors` each run; once Gmail shows `enabledInChat:true`,
+  send with subject `PPC 2-Day Report — [dates]`.
