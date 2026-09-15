@@ -4,6 +4,12 @@
 **Window covered:** 11 Sep 2026 – 12 Sep 2026 (2 full days, ending 48h before the run to allow Amazon's data to finalise)
 **Report generated:** 15 Sep 2026 · Currency: USD
 
+> **Delivery note:** This report was saved to the repo and uploaded to the
+> Google Drive "PPC Reports" folder, but it could **not be emailed** — the
+> Gmail connector is authenticated but not enabled for this automated session,
+> so no send tool was available. To enable emailing on future runs, turn the
+> Gmail connector on for this chat/session in connector settings.
+
 ---
 
 ## ⚠️ Read this first — your ads are switched off

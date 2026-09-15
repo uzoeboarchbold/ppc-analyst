@@ -50,3 +50,15 @@ Running log of lessons so each run gets smoother. Newest at top.
 - Previous report of each type: look in `reports/` for `ppc-2day-latest.md`,
   `ppc-weekly-latest.md`, etc. First 2-day report was 2026-09-15 (no prior to
   compare against).
+
+## Email delivery (unresolved 2026-09-15)
+- Could NOT email the report. The **Gmail connector is connected at org level
+  but `enabledInChat: false`** for this automated session, so no Gmail send
+  tool is loaded. No other email/SMTP tool is available in this environment.
+- Tried: ListConnectors (confirms Gmail connected but off in chat) and
+  ToolSearch for gmail/send/email tools (none callable).
+- To fix: the account owner must enable the Gmail connector for the session
+  this task runs in (connector settings → enable in chat). Until then, report
+  reaches the owner via git commit + Google Drive "PPC Reports" folder only.
+- Drive folder id: 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo (create_file with
+  contentMimeType text/markdown + disableConversionToGoogleType works).
