@@ -49,5 +49,14 @@ Lessons learned so future runs are faster and more reliable. Newest at top.
 - First 2-day report was 2026-09-16 (baseline, all zeros due to the blackout above).
 
 ## Delivery (Drive + email)
-- Google Drive: upload the report into the folder named "PPC Reports".
-- Email the report to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- Google Drive: upload the report into the folder named "PPC Reports"
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). WORKS. Uploaded as a .md file
+  with `disableConversionToGoogleType: true` to keep it as markdown.
+- **Email is BLOCKED in the automated session.** The Gmail connector is installed
+  and connected at org level BUT `enabledInChat: false`, so its tools are not loaded
+  and no email can be sent from the routine. There is no SMTP fallback in the
+  environment. To fix: the user must enable the Gmail connector for this
+  chat/automation in connector settings. Until then, report reaches the user via
+  the repo, Google Drive, and the run's push notification only.
+- 2026-09-16 run: report saved to repo + uploaded to Drive OK; email NOT sent
+  (reason above).
