@@ -39,6 +39,19 @@ Running memory of lessons learned so future runs are faster and more accurate.
 - Search-term report returns 0 rows (no clicks/impressions to attribute in the window),
   so no exact-match candidates or negatives can be suggested until traffic resumes.
 
+## Delivery (Drive + email)
+- **Google Drive:** folder "PPC Reports" = id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `create_file` (parentId=that, contentMimeType=`text/markdown`,
+  `disableConversionToGoogleType=true`, put the whole report in `textContent`).
+  NOTE: `update_file` only changes metadata (title/parent), NOT content — so to
+  fix content you must trash the file and re-create it. Don't upload a placeholder
+  first; pass the real content in the create call.
+- **Email: NOT POSSIBLE in this environment.** There is no Gmail/email/SMTP tool
+  available (only agent-messaging + artifact tools). The task asks to email the
+  report to uzoebo.archbold@gmail.com but that step cannot be completed. Reported it
+  via the run's push notification instead. If email is wanted, an email MCP connector
+  (e.g. Gmail) needs to be added to this environment.
+
 ## Reports
 - First 2-day report was 2026-09-17 (this is the baseline; no prior 2-day report to
   compare against). Next run: compare against `ppc-2day-latest.md`.
