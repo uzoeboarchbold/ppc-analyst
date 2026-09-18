@@ -48,5 +48,11 @@ Living memory. Read at the start of every run; append lessons at the end.
 - First 2-day report saved = 2026-09-18. Next run: compare against `ppc-2day-latest.md`.
 
 ## Delivery
-- Google Drive folder target: "PPC Reports". Email to uzoebo.archbold@gmail.com,
-  subject "PPC 2-Day Report — <dates>".
+- Google Drive folder target: "PPC Reports" (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Upload works via mcp__Google-Drive__create_file with disableConversionToGoogleType=true
+  (keeps it as .md). 2026-09-18 upload OK.
+- **EMAIL: no email/SMTP/Gmail tool is available in this environment**, so the
+  "email it to uzoebo.archbold@gmail.com" step CANNOT be completed automatically. The
+  report is still delivered via the repo commit + the Google Drive "PPC Reports" folder.
+  Owner is notified via the run's push notification instead. If email is required,
+  a Gmail/email connector needs to be added to this environment.
