@@ -48,3 +48,11 @@ Running log of lessons so future automated runs work better. Newest at top.
 ### Delivery
 - Google Drive: upload report file to folder named **"PPC Reports"**.
 - Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+
+### Email delivery (blocker)
+- **Could NOT email the report.** Gmail connector is `connected` at org level
+  but `enabledInChat: false`, so no Gmail/send tool is loaded in the automated
+  session. No email tool was reachable via ToolSearch either.
+- Workaround used: saved to repo + uploaded to Drive "PPC Reports" folder.
+- Fix: enable the Gmail connector for this session/chat (claude.ai connector
+  settings) so future runs can email uzoebo.archbold@gmail.com.

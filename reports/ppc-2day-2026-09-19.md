@@ -24,6 +24,13 @@ Two things worth knowing:
    impressions, 16 clicks, **$3.77** spend and **0 sales** — the account is
    in very early ramp-up and is barely serving yet.
 
+3. **Email could not be sent automatically.** The Gmail connector is
+   connected to the account but is not enabled for this automated session,
+   so the tool to send email is unavailable here. The report was still saved
+   to the repo and uploaded to the Google Drive "PPC Reports" folder. *Fix
+   for later: enable the Gmail connector for this session/chat so future
+   runs can email the report.*
+
 ---
 
 ## Part A — Data table (by campaign)
