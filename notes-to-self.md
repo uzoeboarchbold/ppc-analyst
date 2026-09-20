@@ -42,6 +42,17 @@ Running log of lessons so future runs go smoothly. Newest lessons on top.
   stopped (likely bids too low, tiny/blocked budget, out-of-stock, or the
   listing lost the Buy Box). Report it honestly; do not invent numbers.
 
+## Delivery channels (learned 2026-09-20)
+- **Google Drive**: working. Target folder "PPC Reports" id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with `create_file`
+  (contentMimeType `text/markdown`, `disableConversionToGoogleType: true`).
+- **Email — BLOCKED in the automated session.** The Gmail connector is
+  installed and connected at org level, but `enabledInChat: false`, so its
+  tools are NOT loaded here and I cannot send the email. There is no other
+  mail tool (no SMTP). **Action for the user:** enable the Gmail connector
+  for this session/chat (connector settings) so future runs can email the
+  report. Until then, the report is only delivered via the repo + Drive.
+
 ## Reports
 - First run of the 2-day report was 2026-09-20 (covering Sep 16–17). No prior
   2-day report existed, so no comparison baseline. Future runs: compare
