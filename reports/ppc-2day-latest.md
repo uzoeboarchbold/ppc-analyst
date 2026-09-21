@@ -111,3 +111,9 @@ isn't optimisation — it's getting the ads to deliver at all (see Part B).
 *Prepared automatically by the PPC Analyst routine. Data: Amazon Ads API,
 Sponsored Products, US marketplace. Window ends 48h before run to allow Amazon's
 data to finalise.*
+
+**Delivery status:** Saved to the repo and uploaded to Google Drive ("PPC
+Reports" folder). Automatic **email could not be sent** this run — the Gmail
+connector is connected to the account but not enabled for this automated
+session, so no email tool was available. Please enable the Gmail connector for
+this automation (or add SMTP credentials) to receive these by email in future.
