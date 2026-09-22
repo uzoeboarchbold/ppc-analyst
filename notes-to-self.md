@@ -63,7 +63,12 @@ Living memory for the automated PPC reporting runs. Read this first every run an
   `claude/great-hopper-1herq4`.
 - Upload same file to Google Drive folder **"PPC Reports"** (MCP Google-Drive).
 - Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
-  (If no email tool/connector is available, note it in the report and here.)
+  **BLOCKED (2026-09-22):** the Gmail connector is installed and connected but
+  `enabledInChat: false`, so its send tools are NOT loaded in the automated
+  session — the email could not be sent. Drive upload + git commit succeeded.
+  **Fix:** the owner must enable the Gmail connector for this chat/automation in
+  claude.ai connector settings (and grant send scope). Until then, delivery is
+  via Drive + repo only; flag the missing email each run.
 
 ## Comparison
 
