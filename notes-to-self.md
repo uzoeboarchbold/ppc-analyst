@@ -40,6 +40,15 @@ Running log of lessons so future runs go smoothly. Newest lessons at top.
   bids below floor, new-account ramp, or listing/buy-box ineligibility. Keep
   reporting this as the key finding until delivery resumes.
 
+## Email delivery gotcha (2026-09-23)
+- The **Gmail connector is installed but toggled OFF for the session chat**
+  (`enabledInChat: false`), so no `mcp__Gmail__*` send tool loads and the report
+  email CANNOT be sent automatically. Google Drive upload works fine. To fix:
+  the account owner must enable the Gmail connector for this chat/automation in
+  connector settings. Until then, delivery is: repo commit + Drive upload +
+  push notification. Re-check `ListConnectors` each run; send the email once the
+  connector is enabled.
+
 ## Report mechanics
 - 2-day window = the 2 full days ending 48h before run time. Data lags ~48h.
 - Save reports/ppc-2day-latest.md + reports/ppc-2day-YYYY-MM-DD.md, commit,
