@@ -4,6 +4,16 @@ Running log of lessons so future runs work first time. Newest at top.
 
 ## 2026-09-24 (first run — 2-day report)
 
+**EMAIL STEP BLOCKED.** The Gmail connector is connected at the org level but is
+**toggled OFF for this chat/session** (`enabledInChat: false`), so no Gmail send
+tool is available and the report could NOT be emailed to uzoebo.archbold@gmail.com.
+This is a per-chat setting only the user can change (enable Gmail in this chat's
+connector settings). Report was still saved to the repo and uploaded to the
+Google Drive "PPC Reports" folder. Future runs: if email is still needed, the
+Gmail connector must be enabled for the session, or switch to an SMTP/other send
+method.
+
+
 **Credentials / connection**
 - `AMZ_PROFILE_ID` env var is WRONG: it holds an *application id*
   (`amzn1.application....`), not a numeric advertising profile id. Do not use it
