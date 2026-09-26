@@ -33,6 +33,12 @@ Running log of lessons so future runs get smarter. Newest first.
     either set `AMZ_PROFILE_ID` to the matching NA profile, OR ask the admin to
     allow the EU/FE `advertising-api-*.amazon.com` host in the session's network
     policy.
+- **Delivery this run.** Google Drive upload to the "PPC Reports" folder
+  SUCCEEDED (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). **Email FAILED —
+  no email/Gmail connector is available in this session** (only Google-Drive and
+  github MCP servers are connected). To enable auto-email, the human needs to add
+  a Gmail/email connector to this automation. Until then, delivery is
+  Drive + git commit only, and the human should be notified another way.
 - **FUTURE RUN SHORTCUT:** first hit `/v2/profiles` on NA. If the configured
   profile is listed, proceed on NA. If not, and EU/FE are still 403, stop and
   write the blocker note (don't waste time) — the fix is human-side (profile ID
