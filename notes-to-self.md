@@ -43,6 +43,16 @@ Persistent lessons so future automated runs work better. Read this first, every 
   Run Sun 2026-09-27 23:20 UTC → window = **Sep 23–24, 2026**. Matches the spec example.
 - Previous 2-day window would be Sep 21–22.
 
+## Delivery channels
+- **Google Drive: WORKS.** Folder 'PPC Reports' id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with create_file, `disableConversionToGoogleType: true`, mime `text/markdown`.
+- **Email: BLOCKED in automated runs.** The Gmail connector is installed & connected at
+  org level but `enabledInChat: false`, so its tools are NOT loaded in the scheduled
+  session and email cannot be sent programmatically. Fix: the user must enable the Gmail
+  connector for this session/chat in connector settings. Until then, the report reaches
+  the user via (a) the committed repo file, (b) the Drive upload, and (c) the run's
+  push notification (whose body is emailed to the user by the notification system).
+
 ## Comparison files
 - This 2026-09-27 run is the FIRST 2-day report — no prior report to compare against.
 - Future runs: compare against `reports/ppc-2day-latest.md` (previous) before overwriting it.
