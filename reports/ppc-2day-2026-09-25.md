@@ -10,7 +10,7 @@
 ## ⚠️ Read this first — the ads are not running
 
 For the two days in this report your Sponsored Products ads served **nothing at
-all**: 0 impressions, 0 clicks, £0 / $0 spend and $0 sales. This is not a data
+all**: 0 impressions, 0 clicks, $0.00 spend and $0 sales. This is not a data
 error — the pull from Amazon worked and simply came back empty.
 
 Looking wider to be sure, the account has had **zero delivery since about 10–11
