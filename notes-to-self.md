@@ -41,8 +41,16 @@ Running log of lessons so each run goes smoother. Newest lessons at top of each 
 ## Delivery
 - Save to reports/ppc-2day-latest.md and reports/ppc-2day-YYYY-MM-DD.md; commit
   to branch `claude/great-hopper-iuigvl`.
-- Upload to Google Drive folder "PPC Reports".
+- Upload to Google Drive folder "PPC Reports" (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Use create_file with contentMimeType `text/markdown` + disableConversionToGoogleType=true
+  so it stays a .md file.
 - Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+- **EMAIL BLOCKER (2026-09-29):** Gmail connector is connected at the org level
+  but `enabledInChat: false` — its tools do NOT load in the automated session, so
+  the report CANNOT be emailed automatically. No SMTP fallback available. Until the
+  Gmail connector is enabled for this chat/session, email delivery will fail every
+  run. The report still reaches the user via Google Drive + the git repo. ACTION FOR
+  USER: enable the Gmail connector for this session in connector settings.
 
 ## Run history
 - 2026-09-29: first run. Set up notes. Profile-ID gotcha discovered. See above.
