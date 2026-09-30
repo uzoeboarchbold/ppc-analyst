@@ -36,6 +36,17 @@ Running log of lessons so future runs are faster and more reliable.
   budgets, and/or listings out of stock / suppressed. Flag this prominently —
   it is the real story, not the (empty) 2-day table.
 
+## Delivery channels (learned 2026-09-30)
+- **Google Drive: works.** Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with create_file, `contentMimeType: text/markdown`,
+  `disableConversionToGoogleType: true` so it stays a .md file.
+- **Email: BLOCKED.** The Gmail connector is connected at the org level but
+  `enabledInChat: false` — its tools do not load in this automated session, and
+  a hands-off run cannot toggle it on. **Action for the user:** enable the Gmail
+  connector for this chat/session in connector settings so future runs can email
+  the report. Until then, the report reaches you via the Drive upload, the git
+  commit, and the push notification. No SMTP fallback is available (no creds).
+
 ## Reports of each type
 - 2-day: `reports/ppc-2day-latest.md` + dated `reports/ppc-2day-YYYY-MM-DD.md`.
 - First 2-day report generated 2026-09-30 (no prior report to compare against).
