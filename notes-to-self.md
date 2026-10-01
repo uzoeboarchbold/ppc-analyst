@@ -47,6 +47,17 @@ Running log of lessons so each run gets smoother. Newest notes at the top.
 - For the 2-day window (Sep 27–28) specifically: zero impressions / clicks /
   spend / sales on every profile. The empty report is correct, not a bug.
 
+**Delivery channels**
+- Google Drive upload WORKS. Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload the markdown via `create_file` (contentMimeType `text/markdown`) into it.
+- ⚠️ EMAIL could NOT be sent. The Gmail connector is connected at org level but
+  `enabledInChat: false` for this automated session, so no Gmail tools load and
+  there is no other SMTP/email path. I cannot fix this from here — the user must
+  enable the Gmail connector for this chat/session in claude.ai connector
+  settings. Until then, the push notification (which emails the user) is the
+  substitute email delivery, and the report is available in the repo + Drive.
+  Try the email step again on the next run in case the connector gets enabled.
+
 **Process**
 - Previous-report comparison: none existed on this first run. Going forward the
   previous 2-day report lives at `reports/ppc-2day-latest.md` (dated copies are
