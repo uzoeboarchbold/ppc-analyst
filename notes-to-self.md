@@ -51,3 +51,13 @@ Running log of lessons so future runs are faster and more reliable.
   (run_day-4 and run_day-3).
 - Delivery targets: commit to repo, upload to Google Drive folder "PPC
   Reports", email uzoebo.archbold@gmail.com.
+- Google Drive "PPC Reports" folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with mcp__Google-Drive__create_file (textContent, contentMimeType
+  text/markdown, disableConversionToGoogleType=true). Works fine.
+- **EMAIL CANNOT BE SENT from the scheduled run (as of 2026-10-02).** A Gmail
+  connector exists and is authenticated at the org level, but it is
+  `enabledInChat: false` for this session, so no gmail send/draft tool loads.
+  There is no other email tool. Until the owner enables the Gmail connector
+  for this automation's chat/session, the email step will be skipped every run
+  — rely on the repo commit + Drive upload + the push notification instead, and
+  state in the run summary that email was not sent.
