@@ -37,3 +37,10 @@ Running log of lessons so future runs are faster and more reliable.
   0 sales, for the whole window AND all of September. Ads enabled but not serving. Likely cause: listing not in
   Buy Box / out of stock / suppressed, bids too low to win auctions, or a billing issue. Flagged to owner.
   This was the FIRST report of this type (no previous 2-day report to compare against).
+
+## Email delivery (2026-10-03)
+- Could NOT send the email. The Gmail connector is installed + connected at account level but
+  `enabledInChat: false`, so no Gmail send tool is loaded in the automated session. No SMTP/API fallback.
+- **Action for owner:** enable the Gmail connector for this chat/automation (connector settings) so future
+  runs can email the report. Until then, reports are delivered via repo commit + Google Drive upload only,
+  and the key findings via the run's push notification.

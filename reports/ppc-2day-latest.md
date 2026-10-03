@@ -10,6 +10,11 @@
 > the account's live profile and used the **US seller profile (`26765323558215`)**, which is the only one with
 > campaigns (the CA and MX profiles have none). **Fix:** set `AMZ_PROFILE_ID=26765323558215`.
 
+> **Delivery note:** This report was saved to the repo and uploaded to the Google Drive "PPC Reports"
+> folder successfully. **Email was NOT sent** — the Gmail connector is connected at the account level but is
+> *not enabled in this automated session* (`enabledInChat: false`), so no send tool was available. **Fix:**
+> enable the Gmail connector for this chat/automation so future runs can email the report.
+
 > **Main finding:** All 15 enabled campaigns served **nothing** in this window — 0 impressions, 0 clicks,
 > 0 spend, 0 sales — and the same is true for all of September. The ads are *enabled* but *not delivering*.
 > This is almost certainly a delivery problem, not a performance one (see "What to do next").
