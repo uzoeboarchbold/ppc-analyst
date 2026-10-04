@@ -40,6 +40,17 @@ Running log of lessons so future runs are faster and more reliable.
 - If a future window again returns 0 rows, it is almost certainly a genuine
   "no delivery" state, not a bug — confirm by pulling a wider historical window.
 
+## Delivery channels
+- **Google Drive: works.** Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with create_file, parentId = that id, contentMimeType text/markdown,
+  disableConversionToGoogleType=true (keeps it a .md).
+- **Email: BLOCKED in this session.** Gmail connector is connected at the org
+  level but `enabledInChat:false` — its tools aren't loaded here, so the report
+  can't be emailed automatically. The user must enable the Gmail connector for
+  this chat/automation in connector settings. Until then, delivery = repo +
+  Drive + the run notification. Re-check each run; send the email once Gmail is
+  enabled.
+
 ## Report bookkeeping
 - Reports saved to `reports/`: `ppc-2day-latest.md` (overwritten each run) +
   dated `ppc-2day-YYYY-MM-DD.md`.
