@@ -26,6 +26,18 @@ Running log of lessons so future runs are smoother. Newest first.
   numeric profile ID — almost certainly the US seller profile `26765323558215`.
   Until this is corrected no live data can be pulled, so reports are blocked.
 
+## Delivery channels
+- **Google Drive:** folder "PPC Reports" = id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`
+  (owner uzoebo.archbold@gmail.com). Upload with `create_file`, parentId = that,
+  `contentMimeType=text/markdown`, `disableConversionToGoogleType=true`. NOTE:
+  `textContent` does NOT do shell expansion — pass the literal markdown, never
+  `$(cat ...)` (that uploaded a 6-byte file the first time).
+- **Email: NO email/Gmail connector is available in this environment.** The
+  `text/plain` email step cannot be completed automatically. Only Google-Drive,
+  github and claude-code-remote MCP servers are connected. ACTION NEEDED: user
+  should connect a Gmail/email tool if they want the report emailed, otherwise
+  the report is delivered via the repo + Google Drive only.
+
 ## Reporting API notes (for when the profile ID is fixed)
 - Use Ads API v3 reporting: POST `/reporting/reports` with
   `adProduct=SPONSORED_PRODUCTS`, `groupBy=["campaign"]` for the campaign table
