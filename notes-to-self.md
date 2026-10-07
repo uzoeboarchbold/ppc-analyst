@@ -3,6 +3,12 @@
 Running log of lessons so future runs work better. Newest notes at top.
 
 ## 2026-10-07 — First run (2-day report)
+- **EMAIL COULD NOT BE SENT.** The Gmail connector is installed/authenticated
+  but `enabledInChat:false`, so its tools are not loaded in this automated
+  session and there's no way to send mail from here. The owner must enable
+  the Gmail connector for this chat/session in connector settings for future
+  runs to email automatically. Report was still committed, pushed, and
+  uploaded to the 'PPC Reports' Google Drive folder.
 - **AMZ_PROFILE_ID is misconfigured.** The env var holds an *application* ID
   (`amzn1.application.xxxx`), NOT a numeric Advertising profile ID. The
   reporting API needs the numeric profile ID in the
