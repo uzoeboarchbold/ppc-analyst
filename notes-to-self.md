@@ -53,8 +53,14 @@ Running log of lessons so each run gets smoother. Newest at top.
 
 **Delivery**
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-YYYY-MM-DD.md`
-  (used run date). Commit to branch `claude/great-hopper-3h6vvy`.
-- Upload same file to Google Drive folder "PPC Reports".
-- Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
+  (used run date). Commit to branch `claude/great-hopper-3h6vvy`. ✅ done.
+- Upload same file to Google Drive folder "PPC Reports" (id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). ✅ done via `create_file` (markdown,
+  conversion disabled).
+- **EMAIL COULD NOT BE SENT this run.** The Gmail connector is connected at org
+  level but `enabledInChat: false` — toggled OFF for this session, so no send
+  tool is available. **Action for user: enable the Gmail connector for this
+  chat/session** so future runs can email automatically. Until then, the report
+  still reaches the user via Drive + the run's push notification.
 - Previous-report comparison (Part C): find the prior `ppc-2day-*.md` in reports/
   (excluding latest + today's) to diff headline metrics. First run had none.
