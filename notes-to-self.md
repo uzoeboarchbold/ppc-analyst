@@ -53,5 +53,14 @@ Running notes so future automated runs work better. Read this first, apply the l
   For comparison next run, load the most recent dated file BEFORE this one.
 
 ## Delivery / email status (run 2026-10-09)
-- Fill in whether Google Drive upload ('PPC Reports' folder) and the email to
-  uzoebo.archbold@gmail.com succeeded, so the next run knows the state of those integrations.
+- **Google Drive upload: SUCCESS.** Uploaded to the 'PPC Reports' folder
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`) as `ppc-2day-2026-10-09.md`
+  (text/markdown, no conversion). Drive connector is enabled in chat — works.
+- **Email: NOT SENT — blocker.** The Gmail connector is connected at org level
+  but `enabledInChat: false`, so its tools aren't loaded in this session and I
+  cannot send mail automatically. No other email/SMTP tool is available.
+  - **Fix for a human:** enable the Gmail connector for this chat/automation in
+    the connector settings so future runs can email the report to
+    uzoebo.archbold@gmail.com with subject "PPC 2-Day Report — [dates]".
+  - Until then, the report is available in the repo (`reports/`) and in Google
+    Drive ('PPC Reports' folder).
