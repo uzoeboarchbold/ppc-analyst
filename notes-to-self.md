@@ -40,6 +40,19 @@ Running log of lessons so future automated runs go smoothly. Append, don't rewri
 - When everything is zero, say so plainly and do not fabricate numbers. The
   comparison section should still run (vs. the previous report of the same type).
 
+## Delivery channels
+- **Google Drive: works.** Folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Upload with `create_file`, `textContent=<report>`, `contentMimeType=text/markdown`,
+  `disableConversionToGoogleType=true`. NOTE: `textContent` is literal — do NOT
+  pass shell like `$(cat ...)`; paste the actual text (a `$(cat)` upload made a
+  6-byte junk file that had to be trashed and re-created on the first run).
+- **Email: BLOCKED (2026-10-10).** A Gmail connector exists and is connected at
+  org level but `enabledInChat: false`, so no gmail tools load in this headless
+  session and I cannot send the report by email. No other email/SMTP tool is
+  available. User must enable the Gmail connector for this chat/automation (chat
+  connector settings) for email delivery to work. Until then, deliver via repo +
+  Drive and flag the missing email in the run notification.
+
 ## Housekeeping
 - No previous 2-day report existed on the first run (2026-10-10) — created
   `reports/` fresh. Compare future runs against `reports/ppc-2day-latest.md`
