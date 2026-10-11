@@ -17,6 +17,12 @@ launched). This is the headline of the report: there is nothing to optimise
 until the ads start serving. **No numbers have been invented** — the zeros are
 real.
 
+**Delivery note:** this report was saved to the repo and uploaded to the Google
+Drive "PPC Reports" folder, but it could **not be emailed** this run — the Gmail
+connector is turned off for this automated session, so no send tool was
+available. To get these by email going forward, enable the Gmail connector for
+this scheduled session. (A push notification was sent in place of the email.)
+
 **2. One credential is set up wrong (I worked around it).** The
 `AMZ_PROFILE_ID` setting contains an *application ID* (`amzn1.application.…`)
 instead of a numeric Amazon Ads **profile ID**, so it can't be used as-is. I

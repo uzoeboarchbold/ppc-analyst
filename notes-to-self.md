@@ -30,3 +30,15 @@ Running log of lessons so future automated runs work better. Newest notes at top
   download the GZIP_JSON url. Use `SPONSORED_PRODUCTS`, 7-day attribution columns (purchases7d/sales7d).
   Compute CTR/CPC/ACOS/ROAS myself where not returned.
 - Previous report of this type: NONE yet (this is the first 2-day report). No comparison possible this run.
+- **Data result this run:** US profile has 15 SP campaigns (ASIN B0FXW3GW5F cat deterrent / pet odour,
+  + 1 Cat Tunnel Bed) but ZERO impressions/clicks/spend/sales in the 2-day window AND across the trailing
+  ~30 days. Ads are not delivering (paused / no budget / not launched). Data pull succeeded — zeros are real.
+  Next run: if still all-zero, repeat the "ads not serving" finding; once delivery starts, real optimisation begins.
+- **EMAIL STEP COULD NOT COMPLETE.** The report must be emailed to uzoebo.archbold@gmail.com, but the
+  **Gmail connector is toggled OFF for this chat** (`enabledInChat: false`, though connected at org level),
+  so no Gmail send tool is available to this automated session. Google Drive upload DID work.
+  **Fix for a human:** enable the Gmail connector for this scheduled session's chat/connector settings so
+  future runs can email. Until then, the report is delivered via the repo `reports/` folder + the Drive
+  'PPC Reports' folder, and the run sends a push notification instead of an email.
+- **Drive:** folder 'PPC Reports' id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload the .md there with
+  `disableConversionToGoogleType: true` so it stays a markdown file.
