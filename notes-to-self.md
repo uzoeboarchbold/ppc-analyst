@@ -52,5 +52,16 @@ a pipeline failure. Future runs: if everything is zero, re-check
     classifier. Write the script to a file in the scratchpad and run
     `python3 -I file.py` instead — that works.
 
+**Delivery channels:**
+  - Google Drive upload WORKS. Folder "PPC Reports" id
+    `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Uploaded the report there as a .md file.
+  - **Email FAILED (could not send).** The Gmail connector is installed and
+    connected at the org level but is `enabledInChat: false` for this automated
+    session, so no Gmail send tool is loaded and there is no live user to toggle
+    it on. The run cannot email the report from here.
+    **ACTION FOR OWNER:** enable the Gmail connector for this scheduled chat/
+    session (connector settings → enable in chat) so future runs can email.
+    Until then, the report is delivered via the repo commit and Google Drive.
+
 **Previous report of this type:** none found on first run. Next run compares
 against `reports/ppc-2day-latest.md`.
