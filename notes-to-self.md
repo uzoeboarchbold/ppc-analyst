@@ -50,6 +50,17 @@ Running log of lessons so future runs are faster and more reliable.
   ads without a valid payment method. If future runs keep seeing all-zero data,
   this is almost certainly why — flag it, don't treat it as a pull failure.
 
+## Email delivery (BLOCKED as of 2026-10-13)
+- The Gmail connector IS installed and connected to the account, but it is
+  **toggled OFF for this chat/session** (`enabledInChat: false`), so its email
+  tools are not loaded and I cannot send the report by email from the run.
+- Fix for owner: enable the **Gmail** connector for this session's chat (chat
+  connector settings), or enable it for the scheduled task, so future runs can
+  send the "PPC 2-Day Report" email automatically.
+- Until then: report is still saved to `reports/`, committed/pushed, and
+  uploaded to the "PPC Reports" Drive folder; the run notifies the owner via
+  push notification in lieu of email.
+
 ## Report bookkeeping
 - Reports live in `reports/`. This type: `ppc-2day-latest.md` (overwrite) +
   dated `ppc-2day-[YYYY-MM-DD].md`. Compare each run against `ppc-2day-latest.md`
