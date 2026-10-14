@@ -63,3 +63,12 @@ the full table, summary, and recommendations.
 No previous 2-day report exists — this is the first run of this report type,
 so there is nothing to compare against yet. (And no data this run in any
 case.)
+
+---
+
+### Delivery note
+This report was saved to the repo and uploaded to the Google Drive 'PPC
+Reports' folder. It could **not** be emailed automatically: the Gmail
+connector is connected but switched off for this automated session, so email
+sending is unavailable. To enable automatic email, turn on the Gmail
+connector for this session in the chat's connector settings.

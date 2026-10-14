@@ -22,6 +22,16 @@ Running log of lessons so future runs are smoother. Newest first.
   data with no code changes.
 - Did NOT invent numbers and did NOT substitute another profile's data.
 
+## 2026-10-14 — Email delivery blocked (Gmail not enabled in chat)
+- The Gmail connector is installed and connected at the org level, but it is
+  toggled OFF for this session (`enabledInChat: false`), so its tools are not
+  loaded and I cannot send the report by email automatically.
+- Google Drive IS enabled and the Drive upload works fine.
+- ACTION NEEDED FROM OWNER: enable the Gmail connector for this automated
+  session (chat connector settings) so future runs can email the report.
+- Until then, the report is still saved in the repo and uploaded to the Drive
+  'PPC Reports' folder each run.
+
 ## How-to reminders (confirmed working this run)
 - Token: POST `https://api.amazon.com/auth/o2/token` with grant_type=refresh_token.
 - Headers for Ads API: `Authorization: Bearer <tok>`,
