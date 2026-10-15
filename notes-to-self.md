@@ -46,6 +46,16 @@ Running log of lessons so future runs are faster and more reliable.
 - Until delivery resumes, every report will be all zeros. Keep flagging it at the
   top of each report and keep checking `validPaymentMethod` on the profile each run.
 
+## Email delivery (run 2026-10-15)
+- **Could NOT send the email.** The Gmail connector is installed and connected
+  at the org level but is **toggled OFF for this chat/session**
+  (`enabledInChat: false`), so no Gmail tools load here and there is no other
+  mail tool. Google Drive upload works fine; email does not.
+- Fix for future runs: enable the **Gmail** connector for this session/scheduled
+  task in the connector settings so its tools load. Until then, the report is
+  still delivered via the repo commit and the Drive 'PPC Reports' folder, and the
+  owner should be told the email could not be sent.
+
 ## Date window logic (data lags ~48h)
 - Endpoint = now − 48h. Cover the last fully-finalised calendar days ending at/
   before that point. For the 2-day report, that's the 2 full days whose data is
