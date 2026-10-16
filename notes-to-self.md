@@ -56,6 +56,20 @@ Running log of lessons so future runs work smoothly. Newest notes at top.
 - Until spend resumes, every report will be all-zeros. Keep reporting the
   zero result + the payment-method cause rather than treating it as an error.
 
+## Delivery channels
+
+- **Google Drive: WORKS.** Folder "PPC Reports" id =
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload the .md there each run
+  (contentMimeType text/markdown, disableConversionToGoogleType true).
+- **EMAIL: BLOCKED (2026-10-16).** Gmail connector is installed + connected at
+  the account level BUT `enabledInChat = false`, so no gmail send/draft tool is
+  loaded into the session — I cannot send the report email automatically.
+  FIX: the user must enable the Gmail connector for this chat/automation in the
+  connector settings. Until then, report delivery = Drive + repo only, and note
+  the un-sent email at the top of the run summary. Re-check `ListConnectors`
+  each run; once `enabledInChat = true`, search for the gmail send tool and
+  email uzoebo.archbold@gmail.com with subject "PPC 2-Day Report — [dates]".
+
 ## Reports
 
 - First report of ANY type was this 2026-10-16 run → no prior report to
