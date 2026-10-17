@@ -39,6 +39,12 @@ Running log of lessons so each automated run is smarter than the last. Append; d
 ## Delivery
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-[run-date].md`, commit.
 - Previous report to compare against = most recent `ppc-2day-*.md` (excluding -latest) before this run.
-- Upload same file to Google Drive folder 'PPC Reports'; email to uzoebo.archbold@gmail.com
-  subject "PPC 2-Day Report — [dates]".
+- Upload same file to Google Drive folder 'PPC Reports' (folder id 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo);
+  email to uzoebo.archbold@gmail.com subject "PPC 2-Day Report — [dates]".
+- **⚠️ EMAIL BLOCKED (2026-10-17):** The Gmail connector is connected at the org level but
+  `enabledInChat: false` for these automated sessions, so no Gmail send tool loads and the report
+  cannot be emailed from the run. Drive upload + git commit both work. To fix: the user must enable
+  the Gmail connector for this chat/automation in Claude connector settings. Until then, delivery =
+  Drive + repo + the run's push notification. Re-check `ListConnectors` each run; send the email once
+  it's enabled.
 - 2026-10-17: first run, so no previous 2-day report existed → comparison section said so.
