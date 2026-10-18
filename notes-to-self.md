@@ -47,3 +47,17 @@ Running log of lessons so future runs are faster and more reliable.
   out-of-stock / suppressed listings or not-buyable offers. Flag to owner;
   can't be fixed via the API.
 - No previous 2-day report existed, so no comparison was possible this run.
+
+## Delivery channels
+- **Google Drive:** folder "PPC Reports" exists
+  (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Upload with Drive `create_file`,
+  `parentId` set to that folder, `contentMimeType: text/markdown`,
+  `disableConversionToGoogleType: true`. NOTE: Drive `update_file` only
+  changes metadata (title/parent/description), NOT content — to replace
+  content, trash the old file and create a new one.
+- **Email: NOT currently possible.** The Gmail connector is connected at the
+  org level but `enabledInChat: false` for this automation's session, so no
+  Gmail send/draft tool is available. Until Gmail is enabled in this chat,
+  the email step can't run. The report is still saved to the repo and Drive,
+  and a note to that effect is added at the top of the Drive copy. To fix:
+  enable the Gmail connector for this session in connector settings.

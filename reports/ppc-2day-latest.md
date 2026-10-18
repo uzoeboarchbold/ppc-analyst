@@ -106,3 +106,8 @@ For reference, the baseline this run establishes:
 
 *Data source: Amazon Advertising API (Sponsored Products), US profile
 26765323558215. Attribution: 7-day. Prepared automatically by the PPC Analyst.*
+
+> **Delivery note:** Automatic emailing was not possible this run — the Gmail
+> connector is not enabled in the automation's chat session. This report is
+> saved in the repo (`reports/`) and uploaded to the Google Drive "PPC
+> Reports" folder. Enable Gmail for the session to also receive it by email.
