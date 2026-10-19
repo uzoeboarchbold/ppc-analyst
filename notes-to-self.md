@@ -50,4 +50,12 @@ Running log of lessons so future automated runs work better. Newest first.
   (run date). Commit to branch `claude/great-hopper-n51ohh`.
 - Previous-report comparison: none existed on first run. Next run, compare
   against `ppc-2day-latest.md` before overwriting (read it first).
-- Google Drive folder "PPC Reports" + email to uzoebo.archbold@gmail.com.
+- Google Drive folder "PPC Reports" (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`) —
+  upload works. Note: `create_file` cannot be updated in place (`update_file` is
+  metadata only); to change content, create a fresh file and trash the old one.
+- **EMAIL BLOCKED:** Gmail connector is connected at org level but
+  `enabledInChat: false`, so Gmail tools don't load in this automated session and
+  the report could NOT be emailed to uzoebo.archbold@gmail.com. No way to toggle
+  it from inside an automated run. Fix: user must enable Gmail for this chat in
+  the connector settings. Until then, every run should flag that email didn't go
+  out and rely on the Drive upload + repo commit + push notification instead.

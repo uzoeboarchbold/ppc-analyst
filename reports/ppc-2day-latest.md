@@ -94,3 +94,7 @@ fixed) or not.
   the active **US** seller profile (`26765323558215`, amazon.com). The CA and MX
   profiles on the same account have no campaigns. Worth correcting the stored
   `AMZ_PROFILE_ID` so future runs don't depend on this fallback.
+- **Email delivery:** the Gmail connector is connected but not enabled for this
+  automated chat, so the report could not be emailed automatically this run. It
+  was saved to the "PPC Reports" Drive folder and committed to the repo. Enable
+  Gmail for the chat to restore automatic emailing.
