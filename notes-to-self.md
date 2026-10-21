@@ -45,7 +45,14 @@ Running log of lessons so each run is smoother than the last. Newest at top.
 **Workflow**
 - Reports folder: `reports/`. Overwrite `ppc-2day-latest.md`, save dated copy
   `ppc-2day-YYYY-MM-DD.md`. Commit to branch `claude/great-hopper-j486iz`.
-- Google Drive folder "PPC Reports" + email to uzoebo.archbold@gmail.com.
+- Google Drive folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo` (upload
+  as text/markdown, disableConversionToGoogleType=true to keep the table intact).
+- **EMAIL CANNOT BE SENT from this session.** The Gmail connector is connected but
+  `enabledInChat: false`, so no gmail send tool is available. Report is saved to repo +
+  Drive instead. To fix: user must enable Gmail in chat (connectors settings). Until then,
+  state in every report that email was not sent and point to the Drive copy.
+- Confirmed CA (`2840235221595557`) and MX (`3892485344323414`) profiles have 0 campaigns
+  and 0 activity — all advertising lives on the US profile.
 - Date window (2-day): data lags 48h, so cover the 2 full calendar days before
   the day that falls 48h prior to run time. 2026-10-21 run → Oct 17 & 18.
 - No previous 2-day report existed on this run (first run) → no comparison.
