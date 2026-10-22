@@ -32,5 +32,13 @@ Running log of lessons so each run goes smoother. Newest at top.
   the real story to surface, not an error.
 - **No prior 2-day report existed** → no comparison possible on this run. Next run
   compares against `reports/ppc-2day-latest.md`.
-- Report delivery: save to repo `reports/`, upload to Google Drive folder
-  'PPC Reports', email to uzoebo.archbold@gmail.com.
+- Report delivery:
+  - Repo `reports/` save + commit: WORKS.
+  - Google Drive: WORKS. Folder 'PPC Reports' id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+    Upload with `create_file` (textContent, contentMimeType text/markdown,
+    disableConversionToGoogleType true) and parentId set to that folder.
+  - **EMAIL: NOT POSSIBLE in this environment.** There is no Gmail/email/SMTP tool
+    connected — only Google-Drive and github MCP servers. The STEP 4 email to
+    uzoebo.archbold@gmail.com could not be sent. To enable it, connect a Gmail (or
+    other email) connector to the session. Until then, delivery is via the repo +
+    Drive copy + the phone/email notification the run sends. Flagged to owner.
