@@ -44,7 +44,36 @@ Running log of lessons so future automated runs are faster and more reliable.
   Sunday run → cutoff Fri → cover Wed+Thu. 2026-10-23 run → cutoff 2026-10-21
   → cover 2026-10-19 and 2026-10-20.
 
+## Reporting API gotchas
+- Report date range **max 31 days** per request (400 otherwise). For wider
+  history, split into <=31-day chunks.
+- Empty result array `[]` / zero rows = genuinely no delivery in that window,
+  not an error. Enabled campaigns with zero impressions still usually return
+  rows (all zeros), so distinguish "no campaigns" from "campaigns, no spend".
+- To tell apart "no campaigns" vs "paused/not delivering", query
+  `POST /sp/campaigns/list` (Content-Type/Accept
+  `application/vnd.spCampaign.v3+json`) with optional
+  `{"stateFilter":{"include":["ENABLED"]}}`.
+
+## Account state as of 2026-10-23 (US profile 26765323558215)
+- 54 SP campaigns: 15 ENABLED, 32 PAUSED, 7 ARCHIVED. ~$23.50/day enabled
+  budget. Mostly one ASIN **B0FXW3GW5F** (pet-odour / cat-deterrent) + a
+  cat-tunnel-bed campaign.
+- **ZERO impressions/clicks/spend/sales across the last 30 days** despite
+  enabled campaigns. Likely ASIN not eligible (out of stock / lost Buy Box /
+  suppressed listing) or bids too low. Watch this each run — if still zero,
+  keep flagging; if it flips to real data, the next report finally shows
+  real ACOS/ROAS and the comparison section becomes meaningful.
+- CA (2840235221595557) and MX (3892485344323414) profiles: 0 SP campaigns.
+
 ## Delivery
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `ppc-2day-YYYY-MM-DD.md`.
 - Commit+push to branch `claude/great-hopper-ys5pzc`.
-- Upload to Google Drive folder 'PPC Reports'; email to uzoebo.archbold@gmail.com.
+- Upload to Google Drive folder 'PPC Reports' (folder id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`); use `create_file` with
+  contentMimeType `text/markdown` + `disableConversionToGoogleType=true`.
+- **Email NOT possible from automated session:** Gmail connector is connected
+  at org level but `enabledInChat=false`, so its tools don't load here. Could
+  not email the report. Operator must enable the Gmail connector for this
+  session to allow emailing. Until then, report reaches them via repo + Drive
+  + the push notification.
