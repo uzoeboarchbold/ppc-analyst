@@ -14,7 +14,7 @@ Two things you need to know before the numbers:
 1. **Your ads served nothing in this window — and haven't for at least 30 days.**
    Your US account has **15 switched-on (ENABLED) campaigns** with budgets set
    (about **$23.50/day** in total). Despite that, they got **0 impressions,
-   0 clicks, £0/$0 spend and 0 sales** on 19–20 Oct. I checked wider: the same
+   0 clicks, $0 spend and 0 sales** on 19–20 Oct. I checked wider: the same
    15 campaigns also show **zero of everything across the last 30 days**. The
    campaigns are "on" but Amazon is not showing them to anyone. This is the
    headline issue — see "What to do next" below.
@@ -117,7 +117,7 @@ impressions for 30 days" almost always means one of these:
    campaign and match type is at exactly zero.*
 2. **Bids are too low to win any auction** — if your keyword bids sit well
    below the going rate, you simply never enter the auction.
-3. Budgets so small (£/$1.50/day) that combined with low bids, nothing clears.
+3. Budgets so small ($1.50/day) that combined with low bids, nothing clears.
 
 ### What to do next (in order)
 
