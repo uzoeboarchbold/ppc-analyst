@@ -46,3 +46,13 @@ Lessons learned across runs. Read this first, every run.
   use the window END date). Commit. Upload to Google Drive folder "PPC Reports". Email to
   uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
 - Compare against the previous 2-day report (previous dated file in `reports/`).
+
+## Email delivery — BLOCKED in this environment
+- The **Gmail connector is connected at the org level but NOT enabled in this chat
+  session** (`enabledInChat: false`), so no `gmail`/send-email tool is callable here.
+  The automated email step (subject `PPC 2-Day Report — [dates]`) could **not** be sent.
+- Workaround used: the headline findings were delivered via the routine PushNotification
+  (which also emails the run owner), and the full report is in the repo + Google Drive.
+- To fix for future runs: enable the Gmail connector's tools for this chat/automation in
+  claude.ai connector settings, or add an SMTP/email mechanism. Until then, treat the
+  PushNotification + Drive upload as the delivery path and note the email was skipped.
