@@ -44,6 +44,19 @@ Running log of lessons so the automated runs keep improving. Newest notes at the
   header flags that email was not sent. To enable email, the owner must enable the Gmail
   connector (and its send permission) for Claude Code web sessions in claude.ai connector settings.
 
+### KEY FINDING this run (2026-10-25)
+- **US is the only marketplace with SP campaigns** (54 total: 15 ENABLED, 32 paused, 7 archived).
+  CA/MX have 0 campaigns. Product: ASIN B0FXW3GW5F (Cat Deterrent Spray / Pet Odor Eliminator).
+- **ZERO ad delivery for the entire last 30 days** (0 impressions/clicks/spend/sales), incl. the
+  2-day window. 15 campaigns enabled, combined budget $23.50/day, but nothing serving.
+- Almost certainly **billing**: US profile `validPaymentMethod=false`. Amazon keeps campaigns
+  "enabled" but stops delivery when it can't bill. Flagged prominently in report + notified owner.
+- Future runs: if delivery is still zero AND validPaymentMethod still false, keep flagging billing.
+  Once numbers return, resume normal analysis (best/worst campaigns, negatives, exact-match terms).
+
+### Comparison baseline
+- First 2-day report = `reports/ppc-2day-2026-10-25.md` (all zeros). Next 2-day run compares to it.
+  Previous-report lookup: newest `reports/ppc-2day-YYYY-MM-DD.md` that is NOT today's file.
+
 ### TODO / open questions for future runs
-- Confirm which marketplace the owner wants reported (US assumed primary). If multiple have
-  spend, report each. This run: report whichever profile(s) actually have SP activity.
+- US confirmed as the only active PPC marketplace — report US only unless CA/MX gain campaigns.
