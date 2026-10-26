@@ -68,6 +68,18 @@ breaks or surprises you.
   "PPC 2-Day Report — 27-28 Sep 2026" (file id
   `13IW3SkPs-nzGN-ns4IvmICRLiuscxlqccIay_PWf0E8`).
 
+## Email delivery (LIMITATION — unresolved 2026-10-26)
+- The task says to email the report to uzoebo.archbold@gmail.com. The Gmail
+  connector IS installed/connected at the org level BUT shows
+  `enabledInChat: false` for this automated session, so NO Gmail send tool is
+  loaded and the email CANNOT be sent from here. ToolSearch for gmail/mail
+  returns no send tool. I cannot enable a connector from inside the session.
+- Workaround used: report is committed to the repo AND uploaded to Google
+  Drive 'PPC Reports' (owner has access), and the routine PushNotification is
+  used to deliver the headline to the owner (phone + inbox).
+- TO FIX for future runs: enable the Gmail connector's tools for this chat/
+  routine in claude.ai connector settings so `mcp__Gmail__*` send tools load.
+
 ## Report history
 - 2026-10-26: 2-day report for window Oct 22–23. Account still dark (no
   payment method). All zeros. Compared against 27–28 Sep report (also zeros).
