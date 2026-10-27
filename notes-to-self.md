@@ -45,6 +45,16 @@ Running log of lessons so each run goes smoother. Newest notes at top.
   ROAS = sales/cost yourself.** (acosClicks14d / roasClicks14d do exist if needed.)
 - Report create header content-type: `application/vnd.createasyncreportrequest.v3+json`.
 
+## EMAIL step — blocked in automated runs (2026-10-27)
+- Gmail connector IS installed & connected at org level, but `enabledInChat = false`
+  in this session, so NO Gmail tools load and the report cannot be emailed from here.
+  Google Drive connector IS enabled in chat and works (upload confirmed).
+- Workaround until fixed: deliver findings via PushNotification (phone + email inbox),
+  and rely on the Drive upload + committed repo file. To enable true emailing, the
+  user needs to allow the Gmail connector's tools in this Claude Code session's
+  connector settings. Re-check each run with ListConnectors.
+- Drive 'PPC Reports' folder id: `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+
 ## Report history
 - 2026-10-27: first ever run. No prior 2-day report existed, so compared current
   window (10-23/10-24) against previous window (10-21/10-22) pulled live from API.
