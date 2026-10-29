@@ -41,6 +41,20 @@ GZIP_JSON), (d) never prints credential values. Reuse its logic. First
 thing to check if a run fails: `curl -sS "$HTTPS_PROXY/__agentproxy/status"`
 to see if the Ads host is policy-blocked before assuming an auth issue.
 
+## 2026-10-29 — Email step blocked (Gmail connector not enabled in chat)
+
+Could not auto-email the report. The Gmail connector IS connected at the org
+level (`ListConnectors` shows `connected: true`) but `enabledInChat: false`,
+and no `gmail`/send tool is loadable via ToolSearch this session. So I cannot
+send mail from here.
+
+**Fix (needs the user, one-time):** enable the Gmail connector's tools for
+Claude Code sessions in claude.ai connector settings (and allow the send/compose
+tool permission). Until then, the report still lands in the repo and in the
+Google Drive 'PPC Reports' folder — grab it there. For next run: if Gmail is
+still not enabled in chat, don't spend long on it; upload to Drive + commit, and
+flag the email gap in the push notification.
+
 ## General reminders
 - Data lags ~48h. 2-day report covers the 2 full days ending 48h before run.
 - Never invent numbers. On failure, write a plain-English note at the top of
