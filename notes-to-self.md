@@ -45,6 +45,10 @@ Lessons learned, newest first. Read this before every run and apply it.
 **Delivery channels**
 - Report saved to `reports/ppc-2day-latest.md` + dated copy, committed to branch
   `claude/great-hopper-23w9sg`.
-- Google Drive: upload to folder "PPC Reports" (see run log for status).
-- Email to uzoebo.archbold@gmail.com — CHECK whether an email/Gmail tool is actually available
-  in this session; if not, note it and rely on the push notification + Drive + repo.
+- Google Drive: upload to folder "PPC Reports" — WORKS. Folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+  Use `mcp__Google-Drive__create_file` with contentMimeType text/markdown + disableConversionToGoogleType.
+- **Email: NOT possible in this session.** No email/Gmail/SMTP tool is connected — only the
+  Google-Drive and github MCP servers are available. Could not email uzoebo.archbold@gmail.com.
+  The report still reaches the user via: repo commit, Google Drive, and the push notification.
+  To enable email, a Gmail/email connector must be added to the environment. Flag this each run
+  until fixed; don't claim the email was sent.
