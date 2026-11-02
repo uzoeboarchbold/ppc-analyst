@@ -4,6 +4,19 @@ Running log of lessons so future runs are smoother. Newest first.
 
 ## 2026-11-02 — First run (2-day report)
 
+### Delivery
+- Google Drive upload works: folder "PPC Reports" id
+  `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload via Google-Drive MCP
+  `create_file` with contentMimeType=text/markdown and
+  disableConversionToGoogleType=true (keeps it as a .md file).
+- **EMAIL COULD NOT BE SENT.** The Gmail connector is installed and
+  connected at the org level, but `enabledInChat:false` in this automated
+  session — its tools are not loaded, so there is no send-mail tool to call.
+  No SMTP/other email tool exists either. Future runs: email will keep
+  failing until the Gmail connector is enabled for this session/chat. Until
+  then, rely on Drive + the push notification as the delivery channels, and
+  flag the missing email in the run notification.
+
 ### Credentials / environment
 - LWA token exchange works: `POST https://api.amazon.com/auth/o2/token`
   with grant_type=refresh_token + AMZ_CLIENT_ID / AMZ_CLIENT_SECRET /
