@@ -42,4 +42,12 @@ Running log of lessons so future runs go smoother. Append; don't delete history.
   Use the last day that ended >=48h ago. e.g. run 2026-11-03 23:10 UTC -> Oct 30 & 31.
 - Save reports/ppc-2day-latest.md (overwrite) + reports/ppc-2day-[YYYY-MM-DD].md (dated copy).
 - Previous report of this type to compare against: none existed on the first run (2026-11-03).
-- Also: upload to Google Drive folder "PPC Reports" and email uzoebo.archbold@gmail.com.
+- Also: upload to Google Drive folder "PPC Reports" (folder id 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo) and email uzoebo.archbold@gmail.com.
+
+## Delivery channel limitations (2026-11-03 run)
+- Google Drive upload WORKS (Google Drive connector enabled in session).
+- **EMAIL could NOT be sent automatically.** The Gmail connector is connected at the
+  org level but is `enabledInChat: false` in this automated session, so no Gmail/email
+  tool is loaded here. The report was delivered via the repo + Google Drive instead, and
+  a push notification was sent. To enable auto-emailing, the owner needs to enable the
+  Gmail connector's tools for this chat/automation in claude.ai connector settings.
