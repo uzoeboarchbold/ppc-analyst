@@ -35,6 +35,15 @@ Running log of lessons so future runs are faster and more reliable. Append; don'
   Worked example from the brief: run Sun 00:00 → cover Wed + Thu.
 - 2026-11-04 run → window **2026-10-31 to 2026-11-01**.
 
+## Delivery (Drive + email)
+- Google Drive works. Target folder **"PPC Reports"** id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`
+  (owner uzoebo.archbold@gmail.com). Upload with `create_file`, parentId = that folder,
+  `contentMimeType: text/markdown`, `disableConversionToGoogleType: true` to keep it as a .md file.
+- **EMAIL: no email/Gmail tool or connector is available in this session** (only Google-Drive
+  and github MCP servers are connected). I could NOT send the email to uzoebo.archbold@gmail.com.
+  Workaround until a mail connector is added: the report is in the repo and in the Drive "PPC
+  Reports" folder. **To fix:** connect a Gmail/email connector so future runs can email automatically.
+
 ## History
 - **2026-11-04 (first run):** US account had **15 ENABLED campaigns but ZERO delivery**
   (0 impressions/clicks/cost/sales) for Oct 31–Nov 1. Root cause almost certainly
