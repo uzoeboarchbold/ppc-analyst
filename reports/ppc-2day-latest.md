@@ -121,3 +121,9 @@ generating any performance.**
 
 *Data source: Amazon Advertising API (Sponsored Products v3 reporting), US
 profile 26765323558215. Pulled automatically on 7 Nov 2026.*
+
+*Delivery note: saved to the repo and uploaded to the Google Drive "PPC
+Reports" folder. The automatic email could not be sent this run — the Gmail
+connector's tools are not enabled in this automation's session. To receive
+these by email, enable the Gmail connector for this session in claude.ai
+connector settings.*

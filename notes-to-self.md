@@ -37,10 +37,25 @@ Lessons learned across runs so that future runs are smoother. Read this first.
   `ppc-2day-YYYY-MM-DD.md` (dated, by run date). Compare vs previous 2-day file.
 
 ## Delivery
-- Save to repo, commit to branch `claude/great-hopper-uf50s6`.
-- Upload to Google Drive folder "PPC Reports".
+- Save to repo, commit to branch `claude/great-hopper-uf50s6`. ✅ works.
+- Upload to Google Drive folder "PPC Reports"
+  (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). ✅ works via
+  `mcp__Google-Drive__create_file` with `parentId` set to that folder,
+  `contentMimeType: text/markdown`, `disableConversionToGoogleType: true`.
 - Email to uzoebo.archbold@gmail.com, subject "PPC 2-Day Report — [dates]".
+  ⚠️ **BLOCKED:** the Gmail connector is connected at the org level but its
+  tools are **not enabled in this chat/session** (`enabledInChat: false`), so
+  no send tool is callable. Could NOT email automatically. Fix: enable the
+  Gmail connector's tools for this session/automation in claude.ai connector
+  settings. Until then, the report is delivered via repo + Drive, and the key
+  finding is pushed via notification. Re-check each run — if Gmail tools appear
+  (`mcp__Gmail__*`), send the email.
 
 ## Run history
 - 2026-11-07: First run. No previous 2-day report existed, so no comparison
   possible this time (Part C notes baseline). Window: 2026-11-03 to 2026-11-04.
+  **KEY FINDING: zero ad delivery** — 0 impressions/clicks/spend/sales in the
+  window AND across the prior 2 weeks. Campaigns enabled but not serving; US
+  profile `validPaymentMethod = false`. Flagged owner to fix billing. Email
+  send blocked (Gmail tools not enabled in session) — delivered via repo +
+  Drive + push notification instead.
