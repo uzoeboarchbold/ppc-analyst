@@ -29,3 +29,9 @@ Running log of lessons so each run is smarter than the last. Append, don't delet
 - Previous-report comparison (Part C): find the prior `ppc-2day-*.md` (not -latest) before overwriting. On 2026-11-08 there was none → first run, nothing to compare.
 - Also: upload to Google Drive folder "PPC Reports" + email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
 - Date window rule: data lags 48h; 2-day window = the 2 full days ending 48h before run. Run Sun 2026-11-08 23:10 UTC → window Nov 4–5.
+
+## Delivery lessons
+- **Google Drive upload WORKS.** "PPC Reports" folder id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`. Upload with `create_file` (contentMimeType `text/markdown`, `disableConversionToGoogleType=true`).
+- **EMAIL step could NOT be done (2026-11-08 run).** The Gmail connector is installed & connected at the org level but `enabledInChat: false` in this automated session, so no `mcp__Gmail__*` send tool is available. I could not send the email to uzoebo.archbold@gmail.com.
+  - **To fix:** enable the Gmail connector's tools for this chat/automation in claude.ai connector settings (grant it send/compose permission for the scheduled session). Until then, reports are delivered via the repo commit + Google Drive only, and findings via push notification.
+  - Possible alternative if email stays unavailable: use Drive `share_file` to share the dated report with the user's email (sends a Drive notification email with a link) — not a true email of the body, but reaches the inbox.
