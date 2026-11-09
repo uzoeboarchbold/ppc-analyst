@@ -3,6 +3,7 @@
 **Account:** Uzoebo Archbold E-Commerce (US marketplace) · Sponsored Products
 **Window covered:** 2026-11-05 to 2026-11-06 (2 full days, ending 48h before the run to let Amazon's data finalise)
 **Report generated:** 2026-11-09
+**Delivery:** Saved to repo + uploaded to Google Drive 'PPC Reports'. Email was **not** sent — the Gmail connector is not enabled for this automated session (see note at the end); you were notified by push instead.
 
 ---
 

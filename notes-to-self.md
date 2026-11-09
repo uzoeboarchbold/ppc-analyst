@@ -27,6 +27,12 @@ Running log of lessons so each run gets smoother. Newest at top.
 - Once billing is fixed this will change; keep comparing to prior reports to confirm ads resumed.
 - Campaign census 2026-11-09: 54 total = 15 ENABLED, 32 PAUSED, 7 ARCHIVED.
 
+## Delivery limitation — EMAIL not possible from this session (2026-11-09)
+- Google Drive connector works (upload succeeds). Folder 'PPC Reports' id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+- **Gmail connector is connected at org level but `enabledInChat: false`** → its tools are NOT loaded in this session, so the report could not be emailed to uzoebo.archbold@gmail.com.
+- Workaround used: pushed to repo, uploaded to Drive, and sent a phone/email push notification via the routine's own notifier.
+- TODO for a human: enable the Gmail connector's tools for this automated chat/session so future runs can email.
+
 ## Report mechanics
 - 2-day window = the 2 full days ending 48h before run (data lags ~48h). E.g. run 2026-11-09 23:10 UTC → cover Nov 5 & Nov 6.
 - Save `reports/ppc-2day-latest.md` (overwrite) + dated `reports/ppc-2day-YYYY-MM-DD.md`; commit to branch `claude/great-hopper-g3v3at`.
