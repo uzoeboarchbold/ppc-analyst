@@ -38,6 +38,15 @@ Running log of lessons so future runs work better. Append, don't overwrite.
 - Report flow: POST create -> poll GET `/reporting/reports/{id}` (status COMPLETED)
   -> download `url` (gzip JSON). Content-Type `application/vnd.createasyncreportrequest.v3+json`.
 
+## Delivery gaps
+- **Email could NOT be sent automatically.** The Gmail connector is installed and
+  connected at the org level but is **not enabled in this session**
+  (`enabledInChat: false`), so no `mail`/`gmail` tool is callable here. The report
+  was still saved to the repo and uploaded to the Drive 'PPC Reports' folder, and a
+  push notification was sent. To fix: enable the Gmail connector's tools for this
+  session/chat in claude.ai connector settings so future runs can email the report.
+- Google Drive upload works. 'PPC Reports' folder id: `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`.
+
 ## Reports
 - 2-day report: first one saved 2026-11-10 covering Nov 6–7 2026. No prior 2-day
   report existed, so that run is the baseline for future comparisons.
