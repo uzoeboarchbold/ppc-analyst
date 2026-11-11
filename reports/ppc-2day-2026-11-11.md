@@ -103,3 +103,7 @@ Both fixes are recorded in `notes-to-self.md` so future runs handle them without
 interruption. The remaining issue — **ads not serving, likely due to the missing
 payment method — needs the account owner to act in Seller Central**; it can't be
 fixed from the API.
+
+---
+
+*Note: automated email delivery was not available this run (no email/Gmail tool connected to the automation). This report is saved in the repo and in the "PPC Reports" Google Drive folder.*

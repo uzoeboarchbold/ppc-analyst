@@ -46,4 +46,11 @@ Lessons learned from past runs. Read this before every run and apply it.
   Run 2026-11-11 23:10 UTC → window = 2026-11-07 & 2026-11-08.
 - Save to `reports/`: overwrite `ppc-2day-latest.md` + dated `ppc-2day-[run-date].md`.
 - Previous report of this type = newest `ppc-2day-YYYY-MM-DD.md` before today's.
-- Google Drive folder: "PPC Reports". Email to uzoebo.archbold@gmail.com.
+- Google Drive folder: "PPC Reports" (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Upload with Drive `create_file` (contentMimeType text/markdown,
+  disableConversionToGoogleType true) into that parentId. Works.
+- **Email step: NO email/Gmail tool is connected to this automation.** Only
+  Google-Drive and GitHub MCP servers are available. The required email to
+  uzoebo.archbold@gmail.com could NOT be sent. The owner needs to connect a Gmail
+  connector (or an email-sending tool) for this to work. Until then, delivery =
+  repo + Drive only, and the push notification is the live heads-up.
