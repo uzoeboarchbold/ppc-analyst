@@ -37,6 +37,17 @@ Running log of lessons so future automated runs work better. Newest notes at top
   Owner must fix the payment method in Seller Central → Advertising/Billing. Until fixed,
   every report will show zeros. Re-check `validPaymentMethod` each run and flag if still false.
 
+## Delivery channels
+- Google Drive: upload works. Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`
+  (My Drive, owner uzoebo.archbold@gmail.com). Use create_file with contentMimeType
+  text/markdown and disableConversionToGoogleType=true.
+- **EMAIL CANNOT BE SENT from the automated session.** The Gmail connector is connected
+  at org level but shows `enabledInChat: false`, and no gmail send/draft tool is available
+  via ToolSearch here. So the "email to uzoebo.archbold@gmail.com" step of every run fails.
+  Workaround until fixed: report is still saved to repo + Drive. To enable email, the user
+  must enable the Gmail connector's tools for Claude Code sessions (claude.ai connector
+  settings), or configure an alternative mail path. Re-check each run; send once available.
+
 ## Date window logic (2-day report)
 - Data lags ~48h. Window = the 2 full calendar days ending 48h before run time.
   Run Thu 2026-11-12 23:10 UTC → 48h back = Tue 2026-11-10 → last full day = Nov 9 →
