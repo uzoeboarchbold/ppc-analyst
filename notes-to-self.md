@@ -20,6 +20,10 @@ Running log of lessons so future runs are smoother. Newest at top.
 - As of 2026-11-14 the US account is DORMANT: zero impressions / clicks / spend / sales on every day from 2026-10-13 to 2026-11-11 (checked). 54 campaigns total: 15 ENABLED (budgets $1.50–$2.50/day), 32 PAUSED, 7 ARCHIVED. The enabled campaigns are live but win no auctions — likely bids too low and/or product not buyable (out of stock / no Buy Box). When a report shows all zeros, this is REAL, not a bug — report it plainly, do not invent numbers.
 - Two products advertised: B0FXW3GW5F (cat deterrent spray / pet odor eliminator) and a "Cat Tunnel Bed" line (all paused/archived).
 
+## Delivery channels (status 2026-11-14)
+- **Google Drive: WORKS.** Folder "PPC Reports" = id 1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo. Upload with create_file using `textContent` + contentMimeType text/markdown + disableConversionToGoogleType=true. NOTE: update_file only changes metadata, NOT content — to replace content, create a new file and trash the old one (do not leave placeholder files behind).
+- **Email: NOT POSSIBLE in this session.** A Gmail connector is installed and connected at org level but `enabledInChat:false`, so no Gmail send/compose tool is exposed here (ToolSearch for gmail send/draft returns nothing). The connector is also described as draft/search-only ("Draft replies, summarize threads, & search your inbox"), so even if enabled it likely cannot SEND. The emailing step could not be completed. To enable it, the user needs a send-capable email connector/tool turned on for automated sessions. Until then, rely on the Drive copy + repo commit, and flag the missing email in the run notification.
+
 ## Process reminders
 - Window logic (2-day report): data lags 48h. Cover the 2 full finalised days ending 48h before run. For a run on 2026-11-14 23:09 UTC this = 2026-11-10 and 2026-11-11.
 - Save reports/ppc-2day-latest.md + dated copy reports/ppc-2day-[run-date].md; commit on branch claude/great-hopper-954nu5.
