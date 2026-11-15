@@ -59,4 +59,12 @@ Running log of lessons so future automated runs go smoothly. Newest lessons at t
 - Date window for 2-day report = (run_date − 4) and (run_date − 3), i.e. the 2 full
   days ending 48h before the run. For 2026-11-15 run → 11–12 Nov.
 - Delivery: commit to repo (branch `claude/great-hopper-mbfcpl`), upload to Google
-  Drive folder "PPC Reports", email to uzoebo.archbold@gmail.com.
+  Drive folder "PPC Reports" (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`),
+  email to uzoebo.archbold@gmail.com.
+- **EMAIL NOT POSSIBLE (2026-11-15):** no Gmail/email/SMTP tool is connected in
+  this session — only Google-Drive, GitHub and agent tools. The report CANNOT be
+  emailed automatically. Workaround used: delivered via repo commit + Drive upload,
+  and sent the headline as a push notification to the owner. To enable email, the
+  user needs to connect a Gmail (or other email) connector to these cloud sessions.
+  Future runs: don't waste time re-searching; email stays unavailable until a
+  connector is added. Still upload to Drive + commit, and push-notify the summary.
