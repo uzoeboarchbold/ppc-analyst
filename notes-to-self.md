@@ -32,6 +32,7 @@ Lessons learned across runs. Read this first every run and apply it.
 
 ## Report output checklist
 - Overwrite `reports/ppc-2day-latest.md` + save dated `reports/ppc-2day-[run-date].md`, commit to branch `claude/great-hopper-ak5f1a`.
-- Upload same file to Google Drive folder "PPC Reports".
+- Upload same file to Google Drive folder "PPC Reports" (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Use `create_file` with `base64Content: sha256:<hash>:<abs path>` and `disableConversionToGoogleType:true`. WORKS.
 - Email to uzoebo.archbold@gmail.com, subject `PPC 2-Day Report — [dates]`.
-- Notify owner (push) only when there's something that needs them — e.g. the delivery blackout above.
+  - **BLOCKED (2026-11-16):** The Gmail connector is connected at org level but `enabledInChat:false` for this session — no Gmail send tool is loaded, and ToolSearch finds none. **Email could NOT be sent automatically.** Owner must enable the Gmail connector's tools for Claude Code sessions (claude.ai → Connectors → Gmail → allow in chat/Code) for future runs to email. Until then, the report reaches the owner via push notification + Google Drive + repo commit.
+- Notify owner (push) when there's something that needs them — e.g. the delivery blackout, or the email-send being blocked.
