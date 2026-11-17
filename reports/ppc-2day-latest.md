@@ -1,76 +1,92 @@
 # PPC 2-Day Report — Nov 13–14, 2026
 
-**Account:** Uzoebo Archbold E-Commerce — US marketplace (Sponsored Products)
-**Date window covered:** 2026-11-13 and 2026-11-14 (2 full days, ending 48h before the run to let Amazon's data finalise)
-**Report generated:** 2026-11-17 (run) · Attribution: 7-day
-**Previous report of this type:** none — this is the first 2-day report (baseline)
+**Account:** Uzoebo Archbold E-Commerce — Amazon US (Sponsored Products)
+**Reporting window:** Thu 13 Nov 2026 – Fri 14 Nov 2026 (2 full days; data ends 48h before the run, as Amazon finalises ~48h late)
+**Generated:** Tue 17 Nov 2026 23:09 UTC · **Attribution:** 14-day click (Amazon SP default)
+**Compared against:** previous 2-day report — *Nov 12–13, 2026 (generated 16 Nov)*
 
 ---
 
-## ⚠️ Read this first — nothing is running
+## ⚠️ Headline: the ads are still not running
 
-**The account served ZERO ads in this window.** Every campaign recorded 0 impressions, 0 clicks, $0 spend and 0 sales on both Nov 13 and Nov 14. I checked the wider picture too: **there has been no delivery at all for the last 30+ days** (Oct 16 → Nov 14, every single day zero).
+**Every enabled campaign served ZERO impressions, zero clicks and zero spend on 13–14 November** — so there were no ad sales, because no ads were shown. This is **not a data glitch**: I also pulled the whole last 30 days (16 Oct – 14 Nov) and the account is **still at zero impressions and zero spend on every single day**.
 
-This is **not a reporting error** — the API pulled cleanly. The ads genuinely aren't being shown.
+This is now the **third 2-day report in a row** showing a total blackout (10–11 Nov, 12–13 Nov, and now 13–14 Nov). Nothing has changed — the account has been dark for over a month.
 
-**Most likely cause:** the US advertising account has **no valid payment method on file** (`validPaymentMethod: false`). Amazon will not serve Sponsored Products ads without one. The daily budget on the account is also only $40.
+The 15 enabled campaigns are not new and not paused by mistake; they have live daily budgets ($1.50–$2.50) and have been running for months. Amazon simply isn't letting them deliver.
 
-**What I had to fix to get this far:** the stored profile ID in the system settings (`AMZ_PROFILE_ID`) was wrong — it held an application ID rather than a real advertising profile ID. I looked up the account's real profiles and used the correct US profile (ID 26765323558215), which holds all 54 live campaigns. (CA and MX profiles exist but have no campaigns.)
+**Most likely cause (unchanged):** the US advertising account shows **no valid payment method** (`validPaymentMethod: false`). When Amazon can't bill a seller, it halts all ad delivery while the campaigns still look "active." This one issue would explain the entire blackout.
 
----
+**What to check first (in order):**
+1. **Billing** — Seller Central → Settings → Account Info / Advertising billing. Add or update a valid payment method/credit card. This is the #1 suspect.
+2. **Listing health for ASIN B0FXW3GW5F** (the cat-deterrent / pet-odour spray). If the listing is suppressed, out of stock, or has lost the Buy Box, ads also stop serving. Confirm it's active, in stock and winning the Buy Box.
+3. **Account status** — check for any Amazon policy / account-health / ad-account suspension notices.
 
-## Part A — Data table (by campaign)
-
-All 54 enabled campaigns delivered identically zero, so individual rows add no information. Totals:
-
-| Metric | Nov 13–14 total |
-|---|---|
-| Impressions | 0 |
-| Top-of-search impression share | n/a (no impressions) |
-| Clicks | 0 |
-| CTR | n/a |
-| Purchases | 0 |
-| Sales | $0.00 |
-| Total cost | $0.00 |
-| CPC | n/a |
-| ACOS | n/a |
-| ROAS | n/a |
-
-**Campaigns in the account:** 54 Sponsored Products campaigns, all in ENABLED/PAUSED states, all advertising the Cat Deterrent Spray / Pet Odor Eliminator product (ASIN B0FXW3GW5F). Structure looks deliberate — Exact / Phrase / Broad variants across "cat deterrent", "pet odor eliminator", "litter", "urine" and brand-root themes. The structure is fine; it simply isn't being allowed to run.
+Until delivery is restored, bid, negative and keyword changes make no difference — fixing delivery is the only thing that matters this week.
 
 ---
 
-## Part B — Summary in plain English
+## Part A — Data table (per campaign)
 
-- **Overall spend:** $0. **Overall sales:** $0. There is no ACOS or ROAS to report because nothing was spent and nothing was sold through ads.
-- **Best / worst campaign:** not applicable — none delivered.
-- **Wasted spend / negatives to add:** none — you can't waste spend when nothing is spending. No negative-keyword suggestions this period.
-- **Well-converting search terms to add as exact-match:** none available — with no clicks there is no search-term data to mine.
-- **The real issue:** your ads are switched on inside Amazon but Amazon is refusing to show them. The overwhelmingly most common reason for an entire account to show zero delivery is a **billing/payment problem**, which matches what the account is reporting (no valid payment method).
+All 15 enabled campaigns, 13–14 Nov 2026. Top-of-search impression share, CTR, CPC, ACOS and ROAS are "—" because there were no impressions, clicks or spend to calculate them from.
 
-### What to do next (in order)
-1. **Fix billing.** In Seller Central → Advertising (or the Campaign Manager billing section), add or update a valid credit card / payment method. This is almost certainly the blocker.
-2. **Confirm budgets.** The account daily budget shows as $40 — make sure that's intended and that individual campaigns have live daily budgets, not $0.
-3. **Check the product is sellable.** Ads won't serve if the product is out of stock or doesn't hold the Buy Box. Confirm B0FXW3GW5F is in stock and Buy-Box eligible.
-4. **Re-check in 48 hours.** Once billing is fixed, delivery usually resumes within a day. The next 2-day report will show real numbers to work with, and I can start finding wasted spend and winning search terms then.
+| Campaign | Impr. | ToS Impr. Share | Clicks | CTR | Purchases | Sales | Cost | CPC | ACOS | ROAS |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| SP Auto | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Cat Root 1-10k SV Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Home + Eliminator + Brand Root 10-25k SV Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Cat Deterrent Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Cat Deterrent Phrase | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Cat Deterrent Spray Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Cat Deterrent Spray Phrase | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Pet Odor Eliminator Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Isolated Pet Odor Eliminator Phrase | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP KT \| ST w/ Sales | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Litter + Urine Root 10-25k SV Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Odor Root 25-50k SV Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Odor Root 25-50k SV Phrase | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP Odor Root 50k+ SV Exact | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| SP \| Cat Tunnel Bed Pink Only \| Exact Ranking | 0 | — | 0 | — | 0 | $0.00 | $0.00 | — | — | — |
+| **TOTAL** | **0** | **—** | **0** | **—** | **0** | **$0.00** | **$0.00** | **—** | **—** | **—** |
 
----
-
-## Part C — Comparison to previous 2-day report
-
-There is **no previous 2-day report** to compare against — this is the first one, so it serves as the baseline. All headline metrics (spend, sales, ACOS, ROAS, impressions, clicks) start at zero.
-
-| Metric | This report | Previous | Change |
-|---|---|---|---|
-| Impressions | 0 | — | — (baseline) |
-| Clicks | 0 | — | — |
-| Spend | $0.00 | — | — |
-| Sales | $0.00 | — | — |
-| ACOS | n/a | — | — |
-| ROAS | n/a | — | — |
-
-**Did things improve or worsen?** No basis for comparison yet. The one thing to flag is that the account has been dark for at least a month — so the priority isn't optimisation, it's getting delivery turned back on.
+*(A further 39 campaigns are PAUSED or ARCHIVED — 54 campaigns in the account in total; none served either.)*
 
 ---
 
-*Prepared automatically by the PPC Analyst. Data source: Amazon Advertising API (Sponsored Products), US profile 26765323558215. Note: this environment has no email tool, so this report was delivered via the Google Drive "PPC Reports" folder and shared to your email address rather than sent as a direct email.*
+## Part B — Plain-English summary
+
+- **Overall spend:** $0.00. **Overall ad sales:** $0.00. **ACOS / ROAS:** not applicable — nothing was spent or sold through ads.
+- **Best / worst campaign:** not meaningful — all campaigns sat identically at zero because none were allowed to run.
+- **Wasted spend / negatives to add:** none — you can't waste spend you didn't spend. No search-term data exists for this window, so there are no negatives to suggest.
+- **Search terms to add as exact-match:** none available — with no clicks there are no converting search terms to harvest yet.
+- **What to do next:** This is a delivery problem, not an optimisation problem, and it has now persisted for over a month. Fix it in this order:
+  1. Add/repair the **payment method** on the US ad account (most likely blocker).
+  2. Confirm **ASIN B0FXW3GW5F** is live, in stock and holds the Buy Box.
+  3. Clear any **account-health / policy** flags.
+
+  Once impressions start flowing again, the next 2-day report will show real numbers and I can begin the usual bid, negative and keyword work.
+
+---
+
+## Part C — Comparison to previous 2-day report (Nov 12–13, 2026)
+
+Both reports show a complete blackout, so every headline metric is unchanged at zero.
+
+| Metric | This report (Nov 13–14) | Previous (Nov 12–13) | Change (number) | Change (%) |
+|---|--:|--:|--:|--:|
+| Impressions | 0 | 0 | 0 | 0% (no change) |
+| Clicks | 0 | 0 | 0 | 0% (no change) |
+| Spend | $0.00 | $0.00 | $0.00 | 0% (no change) |
+| Sales | $0.00 | $0.00 | $0.00 | 0% (no change) |
+| Purchases | 0 | 0 | 0 | 0% (no change) |
+| ACOS | n/a | n/a | — | — |
+| ROAS | n/a | n/a | — | — |
+
+**Improved or worsened?** Neither — it's flat at zero for the third consecutive period. That's the signal: the blackout is persistent, not a one-off. The problem isn't getting worse, but it also isn't being fixed, and every day of delay is lost sales. The single priority remains restoring ad delivery (almost certainly the billing fix above).
+
+---
+
+### Technical notes (for the record)
+- The `AMZ_PROFILE_ID` environment variable is still misconfigured — it holds an application-ID value (`amzn1.application…`), not a profile ID. I again resolved the correct US seller profile (`26765323558215`, USD) automatically from the Ads API and used it. **Action for owner:** set `AMZ_PROFILE_ID=26765323558215` so future runs don't depend on auto-detection.
+- Data pulled live from the Amazon Ads API v3 (Sponsored Products). The campaign report completed successfully; targeting and search-term reports returned 0 rows, consistent with zero delivery.
+- This environment has no email tool (only Google Drive and GitHub are connected), so this report was saved to the repo and uploaded to the Google Drive "PPC Reports" folder rather than sent as a direct email.

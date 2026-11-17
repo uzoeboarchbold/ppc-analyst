@@ -17,7 +17,12 @@ Running log of lessons so future runs are faster and more accurate. Append, don'
 - Targeting & search-term reports return **0 rows when there were no impressions** — that's expected, not a bug.
 
 ## Attribution window convention (keep consistent across runs!)
-- Headline Sales / Purchases / ACOS / ROAS use **7-day attribution** (`sales7d`, `purchases7d`). Chosen because the 2-day window is recent and 7d matures faster than 14d. Keep using 7d so period-over-period comparisons stay apples-to-apples.
+- Headline Sales / Purchases / ACOS / ROAS use **14-day attribution** to match the established report series (the Nov 12–13 report and earlier ones all use "14-day click, Amazon SP default"). Request `cost` + `sales14d` + `purchases14d` and compute ACOS/ROAS, OR use the `acosClicks14d`/`roasClicks14d` columns. (Note: `acosClicks7d`/`roasClicks7d` do NOT exist; `sales7d`/`purchases7d` do, if you ever need a 7d view — but the SERIES standard is 14d, so report 14d.)
+
+## Report history / where to find the previous report (IMPORTANT)
+- The repo `reports/` folder can be EMPTY on a fresh clone (the container is ephemeral). **The real archive of past reports is the Google Drive "PPC Reports" folder** (folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`). Always check Drive for the previous report of this type before concluding "no previous report / baseline."
+- Known prior 2-day reports in Drive: Nov 12–13 (gen Nov 16), Nov 10–11 (gen Nov 14), Oct 13–14, Aug 13–14, June 13–14. All found zero delivery. The immediately-previous 2-day report to compare against = the most recent one before this run.
+- There are also monthly/weekly reports in that folder from the same series (don't confuse types — compare 2-day vs 2-day only).
 
 ## Date window convention
 - 2-day report: data lags 48h. Window = the 2 full calendar days ending at the 48h-before-now cutoff. E.g. run 2026-11-17 23:09 UTC -> cutoff 2026-11-15 23:09 -> window = Nov 13 & Nov 14.
