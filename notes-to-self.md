@@ -4,6 +4,19 @@ Running log of lessons so future automated runs work better. Newest first.
 
 ## 2026-11-19 (first run — 2-day report)
 
+**Delivery channels available:** Google Drive connector (works — "PPC Reports"
+folder id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`) and GitHub. **No email/Gmail
+connector is configured in this session**, so STEP 4's "email it to the user"
+cannot be done directly. Workaround used: the PushNotification (phone + inbox)
+carries the summary. If true emailing is wanted, the owner needs to connect a
+Gmail/email connector, or we add an SMTP path with credentials. Logged so future
+runs don't waste time hunting for an email tool.
+
+**Drive upload gotcha:** `create_file` wants `base64Content` as a file reference
+`sha256:<64hex>:<absolute path>` (compute with `sha256sum`), plus
+`contentMimeType: text/markdown` and `disableConversionToGoogleType: true` so it
+stays a .md and isn't converted to a Google Doc.
+
 **AMZ_PROFILE_ID is misconfigured.** The env var contains an LWA *application* ID
 (`amzn1.application.dd42b8099dc749e2af846cb301ada5c5`), NOT a numeric Amazon
 Advertising profile ID. The Ads API needs a numeric profile ID in the
