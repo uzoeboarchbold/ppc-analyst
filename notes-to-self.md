@@ -45,6 +45,15 @@ Running log of lessons so future runs are faster and more accurate. Newest at to
   have started.** The moment real spend appears, the report content changes from "fix billing"
   to normal performance analysis.
 
+## ⚠️ EMAIL DELIVERY BLOCKED (2026-11-20)
+- The **Gmail connector is connected at the org level but `enabledInChat: false`** — its tools
+  are NOT loaded in automated sessions, so the report cannot be emailed from here. Google Drive
+  and GitHub work fine. No SMTP/email fallback is available in this environment.
+- **To fix:** the user needs to enable the Gmail connector's tools for Claude Code sessions
+  (claude.ai connector settings), or add an email-capable tool. Until then, reports land in the
+  repo and the Drive "PPC Reports" folder, and the run notifies by push notification instead.
+- Each run: still attempt to load Gmail tools (ToolSearch "gmail send"); if available, email it.
+
 ## Delivery checklist each run
 1. reports/ppc-2day-latest.md (overwrite) + reports/ppc-2day-YYYY-MM-DD.md (dated), commit to
    branch `claude/great-hopper-bewmbe`.
