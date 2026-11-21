@@ -61,4 +61,6 @@ Once ads are serving, the next reports will have real numbers to optimise (negat
 **No previous 2-day report exists — this is the first 2-day run, so there is nothing to compare against.** Headline metrics this period: spend $0.00, sales $0.00, ACOS n/a, ROAS n/a. Future 2-day reports will compare each of these as an absolute change and a percentage.
 
 ---
+*Delivery status: Saved to the repo and uploaded to the Google Drive "PPC Reports" folder. **The automated email could not be sent** — the Gmail connector is connected to the account but is not enabled for this automated session, so no email tool is available here. To receive these by email, enable the Gmail connector's tools for this workflow in claude.ai connector settings. The full report is in Google Drive and the repo in the meantime.*
+
 *Note on data source: `AMZ_PROFILE_ID` is currently misconfigured (it holds a 50-character non-numeric value that matches no real profile). I automatically used the correct active US seller advertising profile (26765323558215) — the only one of the account's three profiles with any campaigns. Please fix the `AMZ_PROFILE_ID` environment variable to the value `26765323558215`.*

@@ -57,6 +57,17 @@ Running log of lessons so future runs are faster and more reliable.
 - 2-day report = the 2 full UTC days ending ~48h before run.
   e.g. run Sat 2026-11-21 23:09 UTC → window 2026-11-17 to 2026-11-18.
 
+## Delivery (Drive + email)
+- **Google Drive**: folder "PPC Reports" id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo` (owner
+  uzoebo.archbold@gmail.com). Upload .md with `create_file` using `base64Content` file-reference
+  `sha256:<hash>:/abs/path` + `contentMimeType: text/markdown` + `disableConversionToGoogleType:true`.
+  `update_file` is metadata-only — to replace content, trash the old file and create a new one.
+- **EMAIL NOT POSSIBLE in this session (2026-11-21)**: Gmail connector is connected at org level
+  but `enabledInChat: false`, so NO Gmail/send tool loads here (ListConnectors confirms). There is
+  no other email mechanism available. Until the user enables the Gmail connector's tools for this
+  automated workflow in claude.ai connector settings, the email step will keep failing. Report this
+  each run (note in report footer + notify user) rather than silently skipping.
+
 ## Reports / comparison
 - Save to `reports/ppc-2day-latest.md` (overwrite) + `reports/ppc-2day-[YYYY-MM-DD].md`.
 - Compare against the previous 2-day report (previous dated file or the latest before overwrite).
