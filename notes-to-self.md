@@ -38,6 +38,17 @@ Running log of lessons so future runs work first time. Newest at top.
   If future runs still show zero delivery, lead the report with this and check
   whether the payment method has been fixed. Don't invent numbers.
 
+## Email delivery — BLOCKED (2026-11-22)
+- A **Gmail connector exists** and is connected at org level, but its tools are
+  **`enabledInChat: false`** for this scheduled session, so no send/draft tool is
+  available (ToolSearch for gmail returns nothing). **The automated email step
+  cannot run** until Gmail is enabled for this session's tools in the
+  claude.ai connector settings for the environment that runs this routine.
+  Also: the connector is described as "Draft replies / summarize / search" — it
+  may only draft, not send new mail. Until fixed, delivery = repo + Google Drive
+  only, and flag the missing email in the run's push notification.
+  Workaround to try next run: `ListConnectors` to re-check `enabledInChat`.
+
 ## Report mechanics
 - Reports folder: `reports/`. 2-day files: `ppc-2day-latest.md` (overwrite) +
   `ppc-2day-[YYYY-MM-DD].md` (dated, by run date). Compare to previous
