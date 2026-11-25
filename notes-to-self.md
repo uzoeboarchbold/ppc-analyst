@@ -41,3 +41,11 @@ Lessons learned across runs. Read this first, every run.
 - Compare each run against the previous report of the SAME type.
 - Google Drive folder: "PPC Reports". Email to uzoebo.archbold@gmail.com.
 - Date window for 2-day report: the 2 full days ending 48h before run time.
+
+## Email delivery (learned 2026-11-25)
+- The Gmail connector is connected at the org level but its tools are
+  **NOT enabled in this automated chat** (`enabledInChat: false`), and no
+  Gmail send tool can be loaded. So I **cannot send the email automatically**
+  from this session. Report is still delivered via the repo + Google Drive.
+- To fix: enable the Gmail connector's tools for this session/automation in
+  claude.ai connector settings. Until then, skip the email step and say so.
