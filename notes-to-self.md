@@ -47,6 +47,18 @@ Newest lessons at the top of each section.
 - Data lags ~48h. 2-day report covers the 2 fully-finalised days ending at (now-48h),
   rounded to day boundary. A day is finalised when day+1 00:00 ≤ now-48h.
 
+## Delivery channels (repo / Drive / email)
+- Repo: commit reports to `reports/` on branch `claude/great-hopper-9tpxpn`. Works.
+- Google Drive: upload to folder "PPC Reports" (id `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`).
+  Use `create_file` with `base64Content` = `sha256:<hash>:<absolute path>` and
+  `disableConversionToGoogleType: true` so the .md stays a markdown file. Works.
+- EMAIL: NOT POSSIBLE from this session. The Gmail connector is connected at org level
+  but `enabledInChat: false`, so no gmail send/draft tool loads (ToolSearch finds none).
+  I could not email the report. The routine PushNotification (phone + inbox) is the
+  fallback that actually reaches the owner. ACTION FOR OWNER: enable the Gmail connector's
+  tools for this scheduled session (claude.ai connector settings) if email delivery is
+  required, OR accept the Drive upload + notification as the delivery method.
+
 ## Account status observations (update each run)
 - 2026-11-26 run (covering Nov 22–23): US account has 15 SP campaigns but ZERO delivery —
   0 impressions / clicks / cost / sales for the window AND for the trailing 30 days.
