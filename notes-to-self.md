@@ -34,6 +34,15 @@ Running log of lessons so future runs are faster and more accurate.
   then GET the signed `url` and gunzip JSON. Content-Type/Accept:
   `application/vnd.createasyncreportrequest.v3+json`.
 
+## Delivery (Drive + email)
+- **Google Drive works.** Folder "PPC Reports" id = `1lm39VQ4yqDL0bfEEjl0X4E7w1nTeHzKo`
+  (owner uzoebo.archbold@gmail.com). Upload with `create_file`, parentId = that folder,
+  contentMimeType `text/markdown`, `disableConversionToGoogleType: true` to keep it a .md file.
+- **No email tool is connected.** Only the Google-Drive and github connectors exist in this
+  session — there is no Gmail/email/SMTP tool, so the "email the report" step cannot be done
+  automatically. Report delivery = Drive + repo commit, and flag the missing email in the run
+  notification until an email connector is added.
+
 ## Housekeeping
 - `reports/` folder did not exist on first run; create it.
 - Date window rule (2-day report): end 48h before run, cover the 2 full finalised days before
